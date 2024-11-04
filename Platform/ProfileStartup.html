@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
+    <title>Startline</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="platform">
+      <article class="menu">
+        <article class="menu_top">
+          <a href="home.html"><img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo" /></a>
+          <br />
+          <p class="menu_title_2"><a href="GetStarted.html">Get Started</a></p>
+          <p class="menu_title_1"><a href="ProfileStartup.html">Profile</a></p>
+          <p class="menu_title_2"><a href="Search.html">Search</a></p>
+        </article>
+        <article class="menu_bottom">
+          <p class="menu_title_2">User</p>
+          <p class="menu_title_2">Plan Name</p>
+          <p class="menu_title_2"><a href="/Website/support.html" target="_blank">Support</a></p>
+          <p class="menu_title_2"><a href="/Platform/Settings_account_personal.html">Settings</a></p>
+          <p class="menu_title_2">Logout</p>
+        </article>
+      </article>
+      <article class="CustomerType">
+        <a href="/Platform/ProfileStartup.html">
+          <article class="CustomerType1">
+            <p class="CustomerType_title">Startup</p>
+            <p class="CustomerType_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article></a
+        >
+        <a href="/Platform/ProfileCorporate.html">
+          <article class="CustomerType2">
+            <p class="CustomerType_title">Corporate</p>
+            <p class="CustomerType_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article></a
+        >
+      </article>
+      <article class="profile">
+        <br />
+        <article class="flex_left_profile">
+          <img src="/Platform//icon/blur_rectangle.png" class="logo_startup" />
+          <p class="CompanyName">Company Name</p>
+          <img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo" />
+        </article>
+        <br />
+        <br />
+        <br />
+        <p class="profile_title">Basic Information</p>
+        <form>
+          <!-- <label for="reason">asdf</label> -->
+          <br />
+          <label for="email" class="profile_heading">CEO's Work Email</label>
+          <input type="text" id="email" name="email" placeholder="name@comapny.com" class="filters2" />
+          <br />
+          <label for="phone" class="profile_heading">CEO's Work Phone</label>
+          <input type="text" id="phone" name="phone" placeholder="xxxx-xxxx" class="filters2" />
+          <br />
+          <label for="website" class="profile_heading">Website</label>
+          <input type="text" id="website" name="website" placeholder="www.startline.vip" class="filters2" />
+          <br />
+          <label for="employee" class="profile_heading">Employee</label>
+          <input type="number" id="employee" name="employee" placeholder="www.startline.vip" class="filters2" />
+          <br />
+          <label for="foundingyr" class="profile_heading">Founded on</label>
+          <input type="date" id="foundingyr" name="foundingyr" placeholder="www.startline.vip" class="filters2" />
+          <div>
+            <label for="industry" class="profile_heading">Industry</label>
+            <select id="country" name="country" class="filters2">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+          <div>
+            <label for="country" class="profile_heading">Country</label>
+            <select id="country" name="country" class="filters2">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+          <label for="tag" class="profile_heading">Tags</label>
+          <input type="text" id="tag" name="tag" placeholder="www.startline.vip" class="filters2" />
+        </form>
+        <br />
+        <br />
+        <p class="profile_title">Product List</p>
+        <article class="Profile_productlist">
+          <article class="ProductPhotoUpload">
+            <br />
+            <form><input type="file" id="myFile" name="filename" /></form>
+          </article>
+          <article>
+            <form>
+              <label for="product" class="profile_heading">Product</label><br />
+              <input type="text" id="tag" name="tag" placeholder="Product Name" class="filters" />
+            </form>
+          </article>
+          <article>
+            <form>
+              <label for="product" class="profile_heading">Description</label><br />
+              <input type="text" id="tag" name="tag" placeholder="Describe the product" class="filters" />
+            </form>
+          </article>
+        </article>
+        <div id="productsContainer">
+          <div class="product">
+            <article class="Profile_productlist">
+              <article>
+                <form>
+                  <input type="file" id="myFile" name="filename" />
+                </form>
+              </article>
+              <article>
+                <form>
+                  <label for="product" class="profile_heading">Product</label><br />
+                  <input type="text" id="tag" name="tag" placeholder="Product Name" class="filters" />
+                </form>
+              </article>
+              <article>
+                <form>
+                  <label for="product" class="profile_heading">Description</label><br />
+                  <input type="text" id="tag" name="tag" placeholder="Describe the product" class="filters" />
+                </form>
+              </article>
+            </article>
+            <br />
+          </div>
+        </div>
+        <p class="AddRow">+ Add more products</p>
+
+        <br />
+        <br />
+        <p class="profile_title">Financials</p>
+        <br />
+        <div id="sectionsContainer">
+          <div class="section">
+            <p class="Financials_title">Round 1</p>
+            <article class="Profile_productlist">
+              <article>
+                <form>
+                  <label for="product" class="profile_heading">Announced Date</label><br />
+                  <input type="date" id="tag" name="tag" placeholder="Product Name" class="filters" />
+                </form>
+              </article>
+              <article>
+                <form>
+                  <label for="product" class="profile_heading">Round</label><br />
+                  <input type="text" id="tag" name="tag" placeholder="Describe the product" class="filters" />
+                </form>
+              </article>
+              <article>
+                <form>
+                  <label for="product" class="profile_heading">Amount Raised</label><br />
+                  <input type="number" id="tag" name="tag" placeholder="Describe the product" class="filters" />
+                </form>
+              </article>
+            </article>
+            <article>
+              <form>
+                <label for="product" class="profile_heading">Lead Investors</label><br />
+                <input type="text" id="tag" name="tag" placeholder="Describe the product" class="filters" />
+              </form>
+            </article>
+          </div>
+        </div>
+        <p id="addSectionBtn" class="AddRow">+ Add another round</p>
+        <br />
+        <p class="button">Activate</p>
+      </article>
+    </div>
+    <br />
+    <br />
+    <br />
+  </body>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  <script src="smoothScroll.js"></script>
+  <script src="lightbox-plus-jquery.js"></script>
+  <script src="features1.js"></script>
+</html>
