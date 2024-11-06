@@ -19,3 +19,12 @@ addProductBtn.addEventListener("click", function () {
   const newProduct = originalProduct.cloneNode(true);
   productsContainer.appendChild(newProduct);
 });
+
+function toggleBorder(checkbox) {
+  var parentArticle = checkbox.closest(".flex_withBox");
+  if (checkbox.checked) {
+    parentArticle.classList.add("selected");
+  } else {
+    parentArticle.classList.remove("selected");
+  }
+}

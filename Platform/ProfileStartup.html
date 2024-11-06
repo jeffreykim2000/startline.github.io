@@ -6,6 +6,7 @@
     <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
     <title>Startline</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   </head>
   <body>
     <div class="platform">
@@ -13,26 +14,31 @@
         <article class="menu_top">
           <a href="home.html"><img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo" /></a>
           <br />
-          <p class="menu_title_2"><a href="GetStarted.html">Get Started</a></p>
-          <p class="menu_title_1"><a href="ProfileStartup.html">Profile</a></p>
-          <p class="menu_title_2"><a href="Search.html">Search</a></p>
+          <p class="menu_title_2"><a href="/startline/Platform/GetStarted.html">Get Started</a></p>
+          <p class="menu_title_1"><a href="/startline/Platform/ProfileStartup.html">Profile</a></p>
+          <p class="menu_title_2"><a href="/startline/Platform/Search.html">Search</a></p>
+          <article class="upgradeAds">
+            <p class="Ad_line1">Unlock data customization with our Business Plan!</p>
+            <p class="Ad_line2">Get a personalized solution for your business needs.</p>
+            <a href="Settings_plans"><p class="Ad_button">Upgrade your plan</p></a>
+          </article>
         </article>
         <article class="menu_bottom">
           <p class="menu_title_2">User</p>
           <p class="menu_title_2">Plan Name</p>
-          <p class="menu_title_2"><a href="/Website/support.html" target="_blank">Support</a></p>
-          <p class="menu_title_2"><a href="/Platform/Settings_account_personal.html">Settings</a></p>
+          <p class="menu_title_2"><a href="/startline/Website/support.html" target="_blank">Support</a></p>
+          <p class="menu_title_2"><a href="/startline/Platform/Settings_account_personal.html">Settings</a></p>
           <p class="menu_title_2">Logout</p>
         </article>
       </article>
       <article class="CustomerType">
-        <a href="/Platform/ProfileStartup.html">
+        <a href="/startline/Platform/ProfileStartup.html">
           <article class="CustomerType1">
             <p class="CustomerType_title">Startup</p>
             <p class="CustomerType_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </article></a
         >
-        <a href="/Platform/ProfileCorporate.html">
+        <a href="/startline/Platform/ProfileCorporate.html">
           <article class="CustomerType2">
             <p class="CustomerType_title">Corporate</p>
             <p class="CustomerType_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -41,10 +47,12 @@
       </article>
       <article class="profile">
         <br />
+        <br />
+        <br />
         <article class="flex_left_profile">
-          <img src="/Platform//icon/blur_rectangle.png" class="logo_startup" />
+          <img src="/startline/Platform//icon/blur_rectangle.png" class="logo_startup" />
           <p class="CompanyName">Company Name</p>
-          <img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo" />
+          <p class="fas fa-edit" style="color: #5176f6"></p>
         </article>
         <br />
         <br />
@@ -90,47 +98,31 @@
         <br />
         <p class="profile_title">Product List</p>
         <article class="Profile_productlist">
-          <article class="ProductPhotoUpload">
-            <br />
-            <form><input type="file" id="myFile" name="filename" /></form>
-          </article>
-          <article>
-            <form>
-              <label for="product" class="profile_heading">Product</label><br />
-              <input type="text" id="tag" name="tag" placeholder="Product Name" class="filters" />
-            </form>
-          </article>
-          <article>
-            <form>
-              <label for="product" class="profile_heading">Description</label><br />
-              <input type="text" id="tag" name="tag" placeholder="Describe the product" class="filters" />
-            </form>
-          </article>
-        </article>
-        <div id="productsContainer">
-          <div class="product">
-            <article class="Profile_productlist">
-              <article>
-                <form>
-                  <input type="file" id="myFile" name="filename" />
-                </form>
+          <div id="productsContainer">
+            <div class="product">
+              <article class="Profile_productlist">
+                <article class="ProductPhotoUpload">
+                  <form>
+                    <input type="file" id="myFile" name="filename" />
+                  </form>
+                </article>
+                <article>
+                  <form>
+                    <label for="product" class="profile_heading">Product</label><br />
+                    <input type="text" id="tag" name="tag" placeholder="Product Name" class="filters" />
+                  </form>
+                </article>
+                <article>
+                  <form>
+                    <label for="product" class="profile_heading">Description</label><br />
+                    <input type="text" id="tag" name="tag" placeholder="Describe the product" class="filters" />
+                  </form>
+                </article>
               </article>
-              <article>
-                <form>
-                  <label for="product" class="profile_heading">Product</label><br />
-                  <input type="text" id="tag" name="tag" placeholder="Product Name" class="filters" />
-                </form>
-              </article>
-              <article>
-                <form>
-                  <label for="product" class="profile_heading">Description</label><br />
-                  <input type="text" id="tag" name="tag" placeholder="Describe the product" class="filters" />
-                </form>
-              </article>
-            </article>
-            <br />
+              <br />
+            </div>
           </div>
-        </div>
+        </article>
         <p class="AddRow">+ Add more products</p>
 
         <br />
@@ -171,6 +163,9 @@
         <p id="addSectionBtn" class="AddRow">+ Add another round</p>
         <br />
         <p class="button">Activate</p>
+        <br />
+        <br />
+        <br />
       </article>
     </div>
     <br />

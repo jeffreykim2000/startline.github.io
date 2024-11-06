@@ -6,7 +6,6 @@
     <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
     <title>Startline</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   </head>
   <body>
     <div class="platform">
@@ -44,13 +43,13 @@
             <p class="CustomerType_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </a>
         </article>
-        <article class="CustomerType1">
+        <article class="CustomerType2">
           <a href="/startline/Platform/Settings_bookmark.html">
             <p class="CustomerType_title">Bookmark Settings</p>
             <p class="CustomerType_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </a>
         </article>
-        <article class="CustomerType2">
+        <article class="CustomerType1">
           <a href="/startline/Platform/Settings_plan.html">
             <p class="CustomerType_title">Plan Settings</p>
             <p class="CustomerType_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -59,54 +58,57 @@
       </article>
       <article class="profile">
         <br /><br /><br />
-        <p class="Search_title">Bookmark Management</p>
-        <p class="Settings_bookmark_subtitle">Create, edit, or delete bookmarks</p>
+        <p class="Search_title">Plan Settings</p>
+        <p class="Settings_bookmark_subtitle">Change your subscription option</p>
+
+        <article class="plan">
+          <article class="flex_left">
+            <article class="plans">My plan</article>
+            <article>
+              <article class="flex_withBox">
+                <article><input type="checkbox" onchange="toggleBorder(this)" /></article>
+                <article>
+                  <p class="PriceTier">Free</p>
+                  <p class="PriceTier_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+                <article class="Price">$0 /month</article>
+              </article>
+              <article class="flex_withBox">
+                <article><input type="checkbox" onchange="toggleBorder(this)" /></article>
+                <article>
+                  <p class="PriceTier">Business</p>
+                  <p class="PriceTier_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+                <article class="Price">$49 /month</article>
+              </article>
+              <article class="flex_withBox">
+                <article><input type="checkbox" onchange="toggleBorder(this)" /></article>
+                <article>
+                  <p class="PriceTier">Corporate</p>
+                  <p class="PriceTier_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+                <article class="Price">$199 /month</article>
+              </article>
+            </article>
+          </article>
+        </article>
+        <p class="button_right">Save</p>
         <br />
-        <input type="text" placeholder="Search for bookmark" name="search" class="BookmarkFilter" />
         <br />
+
+        <p class="Search_title">Unsubscribe</p>
+        <p class="Settings_bookmark_subtitle">Modify the messages below to unsubscribe</p>
         <br />
-        <table class="bookmark">
-          <tr>
-            <th></th>
-            <th>Bookmark</th>
-            <th>Count</th>
-            <th></th>
-            <th></th>
-          </tr>
-          <tr>
-            <td><input type="checkbox" /></td>
-            <td>AI</td>
-            <td>3</td>
-            <td>
-              <i class="fas fa-edit" style="color: #5176f6"></i>
-            </td>
-            <td>
-              <i class="fas fa-trash-alt" style="color: #d94e47"></i>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" /></td>
-            <td>AI</td>
-            <td>3</td>
-            <td>
-              <i class="fas fa-edit" style="color: #5176f6"></i>
-            </td>
-            <td>
-              <i class="fas fa-trash-alt" style="color: #d94e47"></i>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" /></td>
-            <td>AI</td>
-            <td>3</td>
-            <td>
-              <i class="fas fa-edit" style="color: #5176f6"></i>
-            </td>
-            <td>
-              <i class="fas fa-trash-alt" style="color: #d94e47"></i>
-            </td>
-          </tr>
-        </table>
+        <form>
+          <label for="unsubscription" class="profile_heading2">Reason for unsubscription</label>
+          <select id="country" name="country" class="filters3">
+            <option value="reason">Choose a reason</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </form>
+        <br />
+        <p class="button_right">Unsubscribe</p>
       </article>
     </div>
     <br />
@@ -116,4 +118,5 @@
   <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
   <script src="smoothScroll.js"></script>
   <script src="lightbox-plus-jquery.js"></script>
+  <script src="features1.js"></script>
 </html>
