@@ -59,6 +59,14 @@ body {
   text-align: left;
 }
 
+.menu_middle {
+  position: relative;
+  top: 28%;
+  left: 0;
+  width: fit-content;
+  text-align: left;
+}
+
 .menu_bottom {
   position: absolute;
   bottom: 5%;
@@ -75,13 +83,17 @@ body {
 
 .content {
   width: 80%;
-  height: 500px;
+  height: 100vh;
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.5),
     rgba(200, 220, 255, 0.15),
     rgba(47, 86, 165, 0.01)
   ); /* Gradient with increased transparency for the middle color */
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .menu_title_1 {
@@ -255,10 +267,10 @@ body {
 }
 
 .CustomerType {
-  width: fit-content;
+  width: 25%;
   height: fit-content;
   gap: 40px;
-  opacity: 0px;
+  opacity: 1;
   margin: 3%;
   padding-left: none;
   text-decoration: none;
@@ -309,7 +321,7 @@ body {
 }
 
 .profile {
-  width: 50%;
+  width: 55%;
   height: 100vh;
   gap: 0px;
   opacity: 1;
@@ -463,7 +475,8 @@ body {
   margin: 3%;
 }
 
-.SearchFlex {
+.Search2 {
+  margin: 3%;
   scroll-behavior: smooth;
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
@@ -583,8 +596,8 @@ body {
 .card {
   width: 75%;
   height: 75%;
-  padding: 20px 30px 30px 30px;
-  gap: 30px;
+  padding: 20px 15px 30px 30px;
+  gap: 0px;
   border-radius: 30px;
   opacity: 0px;
   background: #ffffff;
@@ -593,8 +606,8 @@ body {
 }
 
 .card_similarcompanies {
-  width: max-content;
-  height: max-content;
+  width: fit-content;
+  height: fit-content;
   padding: 30px;
   gap: 30px;
   border-radius: 30px;
@@ -623,7 +636,8 @@ body {
   line-height: 15px;
   text-align: right;
   color: #2962ff;
-  margin-top: 0px;
+  margin-top: 15px;
+  padding-right: 10%;
 }
 
 .card_heading {
@@ -637,7 +651,7 @@ body {
 .card_content {
   font-size: 13px;
   font-weight: 400;
-  line-height: 26.04px;
+  line-height: 18px;
   text-align: left;
   color: #000000;
 }
@@ -652,10 +666,41 @@ body {
   background: #e7eeff;
   font-size: 13px;
   font-weight: 600;
-  line-height: 19.53px;
+  line-height: 10px;
   text-align: left;
   color: #2962ff;
-  margin: none;
+  margin-top: 8px;
+}
+
+.card_heading_sim {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
+}
+
+.card_content_sim {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+}
+
+.card_technology_sim {
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 15px 8px 15px;
+  gap: 10px;
+  border-radius: 30px;
+  opacity: 0px;
+  background: #e7eeff;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 10px;
+  text-align: left;
+  color: #2962ff;
 }
 
 .card_flex {
@@ -675,7 +720,7 @@ body {
   margin-top: 10px;
   font-size: 13px;
   font-weight: 400;
-  line-height: 19.53px;
+  line-height: 13px;
 }
 
 .card a {
@@ -690,8 +735,14 @@ body {
 
 .flex_left {
   display: flex;
+  margin: none;
+  padding: none;
+}
+
+.flex_left_space {
+  display: flex;
   justify-content: left;
-  margin: 0px;
+  gap: 7%;
 }
 
 .flex1 {
@@ -721,7 +772,7 @@ body {
 }
 
 .plan {
-  width: Fill (670px) px;
+  width: 55%;
   height: Hug (105px) px;
   padding: 20px 0px 0px 0px;
   gap: 20px;
@@ -825,6 +876,7 @@ input[type="file"]::before {
   text-align: left;
   color: #171b23;
   margin-bottom: 3%;
+  width: max-content;
 }
 
 .CompanyCardDetailTab {
@@ -873,7 +925,7 @@ input[type="file"]::before {
 }
 
 .CompanyContent {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .Settings_bookmark_subtitle {
@@ -976,13 +1028,14 @@ td:nth-child(5) {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
   margin-top: 2%;
+  width: 80%;
 }
 
 .grid_recommendation {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  margin-top: 2%;
+  margin-top: 1%;
   margin-left: 2%;
 }
 
@@ -1000,6 +1053,24 @@ td:nth-child(5) {
   line-height: 40px;
   text-align: left;
   color: #64758f;
+  width: fit-content;
+}
+
+.CompanyContent_description {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26.04px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #171b23;
+}
+
+.CompanyContent_content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  text-align: left;
+  color: #64758f;
 }
 
 .logo_startup {
@@ -1013,7 +1084,7 @@ td:nth-child(5) {
 .logo_members {
   width: 100px;
   height: 100px;
-  margin-right: 30px;
+  margin-right: 0px;
   margin-bottom: 20px;
 }
 
@@ -1028,15 +1099,14 @@ td:nth-child(5) {
   border-radius: 12px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
-  margin-left: 2%;
-  margin-top: 1%;
+  margin: 8%;
 }
 
 .Ad_line1 {
   font-size: 16px;
   font-weight: 700;
   line-height: 20.83px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.1px;
   text-align: left;
   color: #171b23;
   padding-bottom: 10px;
@@ -1046,20 +1116,22 @@ td:nth-child(5) {
   font-size: 14px;
   font-weight: 400;
   line-height: 18.23px;
-  letter-spacing: 1px;
+  letter-spacing: 0.1px;
   text-align: left;
   color: #64758f;
   padding-bottom: 10px;
+  width: auto;
 }
 
 .Ad_button {
   width: 100%;
   height: max-content;
-  padding: 12px 0px 12px 0px;
-  gap: 20px;
+  padding: auto;
+  line-height: 30px;
+  gap: 0px;
   border-radius: 50px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
+  border: 1px;
+  opacity: 1;
   background: #2962ff1a;
   border: 1px solid #d4e0ff;
   text-align: center;
@@ -1069,7 +1141,7 @@ td:nth-child(5) {
   font-size: 14px;
   font-weight: 700;
   line-height: 18.23px;
-  letter-spacing: 1px;
+  letter-spacing: 0.1px;
   text-align: left;
   color: #2962ff;
   text-decoration: none;
@@ -1084,14 +1156,15 @@ td:nth-child(5) {
   border: 1px solid #d4e0ff;
   display: flex;
   justify-content: left;
-  width: Fill (540px) px;
-  height: Hug (116px) px;
+  width: 100%;
+  height: max-content;
   padding: 20px;
   gap: 15px;
   border-radius: 20px;
   border: 1px 0px 0px 0px;
-  opacity: 0px;
+  opacity: 1;
   margin-bottom: 5%;
+  margin-right: none;
 }
 
 .flex_withBox.selected {
@@ -1128,10 +1201,12 @@ td:nth-child(5) {
   font-size: 20px;
   font-weight: 600;
   line-height: 20.83px;
-  letter-spacing: 0.10000000149011612px;
+  letter-spacing: 0.1px;
   text-align: left;
   color: #64758f;
   padding-right: 10%;
+  width: max-content;
+  margin: none;
 }
 
 .member {
@@ -1141,7 +1216,7 @@ td:nth-child(5) {
   text-align: left;
   color: #171b23;
   width: max-content;
-  padding-right: 100px;
+  padding-right: 0px;
   padding-top: 15px;
   margin-bottom: 5px;
 }
@@ -1182,6 +1257,7 @@ td:nth-child(5) {
   text-align: left;
   color: #171b23;
   margin-top: 35px;
+  margin-left: 8%;
 }
 
 .bottom {
