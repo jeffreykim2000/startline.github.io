@@ -21,6 +21,15 @@ body {
   margin: none;
 }
 
+.logo_sim {
+  width: 50%;
+  height: 25%;
+  gap: 0px;
+  opacity: 1;
+  padding: none;
+  margin: none;
+}
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
@@ -42,13 +51,16 @@ body {
 .menu {
   height: 100vh;
   width: 20%;
-  gap: 0px;
-  border: 0px 1px 0px 0px;
-  opacity: 0px;
+  gap: 0;
   border-right: 1px solid #e3e8ef;
-  padding: none;
-  border: 0px 0px 1px 0px;
-  opacity: 0px;
+  border-bottom: 1px solid #e3e8ef; /* Adding a bottom border for clarity */
+  padding: 0;
+  opacity: 1; /* Change opacity to 1 to make the menu visible */
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the menu is above other content */
 }
 
 .menu_top {
@@ -69,20 +81,20 @@ body {
 
 .menu_bottom {
   position: absolute;
-  bottom: 5%;
+  bottom: 7%;
   left: 0;
   width: max-content;
   text-align: left;
 }
 
 .menu_bottom_similarcompanies {
-  position: absolute;
-  bottom: 7%;
+  position: fixed;
+  bottom: 6%;
   width: 75%;
 }
 
 .content {
-  width: 80%;
+  width: 100%;
   height: 100vh;
   background: linear-gradient(
     to bottom,
@@ -94,6 +106,8 @@ body {
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  position: fixed;
+  left: 20%;
 }
 
 .menu_title_1 {
@@ -152,6 +166,7 @@ body {
   text-align: center;
   color: #171b23;
   margin-top: 3%;
+  margin-right: 20%;
 }
 
 .gradient_text {
@@ -167,10 +182,11 @@ body {
   text-align: center;
   color: #64758f;
   line-height: 50px;
+  margin-right: 20%;
 }
 
 .weeklyStats {
-  width: 85%;
+  width: 70%;
   height: max-content;
   padding: 30px;
   gap: 10px;
@@ -274,6 +290,8 @@ body {
   margin: 3%;
   padding-left: none;
   text-decoration: none;
+  position: fixed;
+  left: 20%;
 }
 
 .CustomerType a {
@@ -321,7 +339,7 @@ body {
 }
 
 .profile {
-  width: 55%;
+  width: 100%;
   height: 100vh;
   gap: 0px;
   opacity: 1;
@@ -331,6 +349,8 @@ body {
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  position: fixed;
+  left: 45%;
 }
 
 .profile_title {
@@ -458,29 +478,39 @@ body {
 }
 
 .Search {
-  width: 80%;
+  width: 100%;
   height: 100vh;
   gap: 40px;
   opacity: 1;
   margin: 0%;
+  padding: none;
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.5),
     rgba(200, 220, 255, 0.15),
     rgba(47, 86, 165, 0.01)
   ); /* Gradient with increased transparency for the middle color */
+  left: 20%;
 }
 
 .Search1 {
-  margin: 3%;
+  margin-right: 2%;
+  margin-left: 2%;
+  position: fixed;
+  width: 75%;
+  height: 25%;
+  left: 20%;
 }
 
 .Search2 {
-  margin: 3%;
   scroll-behavior: smooth;
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  top: 30%;
+  height: 70%;
+  left: 20%;
+  position: fixed;
 }
 
 .Search_title {
@@ -490,6 +520,7 @@ body {
   text-align: left;
   color: #171b23;
   margin-bottom: 10px;
+  margin-top: 2%;
 }
 
 .line {
@@ -563,7 +594,7 @@ body {
   border: 1px solid var(--Lines, #eaf0ff);
   box-shadow: 0px 4px 20px -4px #2f56a514;
   background: #ffffff;
-  width: 55%;
+  width: 50%;
   height: max-content;
   padding: 8px 8px 8px 8px;
   gap: 15px;
@@ -599,22 +630,20 @@ body {
   padding: 20px 15px 30px 30px;
   gap: 0px;
   border-radius: 30px;
-  opacity: 0px;
+  opacity: 1;
   background: #ffffff;
   box-shadow: 0px 4px 15px -4px #2f56a514;
   margin: 10px;
 }
 
 .card_similarcompanies {
-  width: fit-content;
+  width: fit-content; /* Adjust the percentage to fit 4 cards in a row */
   height: fit-content;
-  padding: 30px;
+  padding: 20px 50px 20px 50px;
   gap: 30px;
   border-radius: 30px;
-  opacity: 0px;
   background: #ffffff;
   box-shadow: 0px 4px 15px -4px #2f56a514;
-  margin: none;
 }
 
 .card_similarcompanies a {
@@ -623,7 +652,7 @@ body {
 
 .card_top {
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 .card_right {
@@ -672,35 +701,10 @@ body {
   margin-top: 8px;
 }
 
-.card_heading_sim {
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 30px;
-  text-align: left;
-  color: #000000;
-}
-
-.card_content_sim {
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: left;
-  color: #000000;
-}
-
-.card_technology_sim {
-  width: fit-content;
-  height: fit-content;
-  padding: 8px 15px 8px 15px;
-  gap: 10px;
-  border-radius: 30px;
-  opacity: 0px;
-  background: #e7eeff;
-  font-size: 10px;
-  font-weight: 600;
-  line-height: 10px;
-  text-align: left;
-  color: #2962ff;
+@media (max-width: 768px) {
+  .card_similarcompanies {
+    width: calc(48% - 20px); /* Adjust for smaller screen sizes */
+  }
 }
 
 .card_flex {
@@ -709,7 +713,7 @@ body {
 }
 
 .target {
-  width: fit-content;
+  width: max-content;
   height: fit-content;
   padding: 5px 15px 5px 15px;
   gap: 10px;
@@ -737,17 +741,24 @@ body {
   display: flex;
   margin: none;
   padding: none;
+  justify-content: left;
 }
 
 .flex_left_space {
   display: flex;
   justify-content: left;
-  gap: 7%;
+  gap: 5%;
+}
+
+.flex_left_product {
+  display: flex;
+  justify-content: left;
+  gap: 3%;
 }
 
 .flex1 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 20px;
 }
 
@@ -784,7 +795,7 @@ body {
 .notification {
   font-size: 16px;
   font-weight: 500;
-  line-height: 19.2px;
+  line-height: 30px;
   text-align: left;
   color: #171b23;
 }
@@ -879,6 +890,16 @@ input[type="file"]::before {
   width: max-content;
 }
 
+.SimilarCompanies {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: left;
+  color: #171b23;
+  margin-bottom: 1%;
+  width: max-content;
+}
+
 .CompanyCardDetailTab {
   width: max-content;
   height: max-content;
@@ -889,12 +910,12 @@ input[type="file"]::before {
   grid-column-gap: 25px; /* Add space between grid columns */
   justify-content: space-evenly;
   text-align: center;
-  margin-top: 4%;
+  margin-top: 2%;
   margin-bottom: 2%;
-  padding: 0;
+  padding: none;
 }
 
-.CompanyCardDetailTab button:hover {
+.CompanyCardDetailTab a:hover {
   border-bottom: 2px solid #2962ff;
   color: #2962ff;
   width: fit-content;
@@ -922,6 +943,7 @@ input[type="file"]::before {
   gap: 10px;
   opacity: 0px;
   background: transparent;
+  text-decoration: none;
 }
 
 .CompanyContent {
@@ -956,14 +978,6 @@ input[type="file"]::before {
   margin-right: 1%;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 0px 10px 0px #2f56a514;
-}
-
 th,
 td {
   border: none;
@@ -981,9 +995,13 @@ tr {
 }
 
 .bookmark {
-  width: 90%;
+  width: 100vh;
   margin: none;
   padding: none;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 0px #2f56a514;
 }
 
 .bookmark tr {
@@ -1019,8 +1037,9 @@ td:nth-child(5) {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   margin-top: 2%;
+  column-gap: auto;
 }
 
 .grid_similarcompanies {
@@ -1029,6 +1048,8 @@ td:nth-child(5) {
   grid-template-rows: repeat(1, 1fr);
   margin-top: 2%;
   width: 80%;
+  column-gap: 5%;
+  justify-content: space-between;
 }
 
 .grid_recommendation {
@@ -1042,7 +1063,7 @@ td:nth-child(5) {
 .CompanyContent_info {
   font-size: 16px;
   font-weight: 600;
-  line-height: 40px;
+  line-height: 30px;
   text-align: left;
   color: #171b23;
 }
@@ -1050,7 +1071,7 @@ td:nth-child(5) {
 .CompanyContent_info1 {
   font-size: 16px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 30px;
   text-align: left;
   color: #64758f;
   width: fit-content;
@@ -1059,7 +1080,7 @@ td:nth-child(5) {
 .CompanyContent_description {
   font-size: 20px;
   font-weight: 600;
-  line-height: 26.04px;
+  line-height: 40px;
   letter-spacing: 0.10000000149011612px;
   text-align: left;
   color: #171b23;
@@ -1084,6 +1105,13 @@ td:nth-child(5) {
 .logo_members {
   width: 100px;
   height: 100px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+
+.logo_product {
+  width: 65px;
+  height: 65px;
   margin-right: 0px;
   margin-bottom: 20px;
 }
@@ -1156,7 +1184,7 @@ td:nth-child(5) {
   border: 1px solid #d4e0ff;
   display: flex;
   justify-content: left;
-  width: 100%;
+  width: 95%;
   height: max-content;
   padding: 20px;
   gap: 15px;
@@ -1204,8 +1232,8 @@ td:nth-child(5) {
   letter-spacing: 0.1px;
   text-align: left;
   color: #64758f;
-  padding-right: 10%;
-  width: max-content;
+  padding-right: 5%;
+  width: 10%;
   margin: none;
 }
 
@@ -1257,7 +1285,7 @@ td:nth-child(5) {
   text-align: left;
   color: #171b23;
   margin-top: 35px;
-  margin-left: 8%;
+  margin-left: 2%;
 }
 
 .bottom {
@@ -1272,4 +1300,40 @@ td:nth-child(5) {
   border: none;
   margin-top: auto; /* Push the button to the right */
   margin-left: 40px;
+}
+
+.FinanceTable {
+  width: 100%;
+  margin: none;
+  padding: none;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: none;
+  background-color: inherit;
+}
+
+.FinanceTable th {
+  font-size: 22px;
+  color: #000000;
+  width: max-content;
+  background: inherit; /* Inherit the background color */
+}
+
+.FinanceTable td {
+  font-size: 22px;
+  color: #64758f;
+  width: max-content;
+  background: inherit; /* Inherit the background color */
+}
+.CompanyContent_Finance_Round_number {
+  gap: 10px;
+  opacity: 0px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 23.44px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #2962ff;
+  margin-bottom: 2%;
 }
