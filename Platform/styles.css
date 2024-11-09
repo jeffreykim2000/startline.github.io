@@ -636,6 +636,22 @@ body {
   margin: 10px;
 }
 
+.contact_card {
+  width: max-content;
+  height: max-content;
+  padding: 20px 15px 15px 30px;
+  gap: 0px;
+  border-radius: 30px;
+  opacity: 1;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px -4px #2f56a514;
+  margin: 10px;
+}
+
+.grid a {
+  text-decoration: none;
+}
+
 .card_similarcompanies {
   width: fit-content; /* Adjust the percentage to fit 4 cards in a row */
   height: fit-content;
@@ -699,6 +715,34 @@ body {
   text-align: left;
   color: #2962ff;
   margin-top: 8px;
+}
+
+.contact_card_viewmore {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: right;
+  color: #2962ff;
+  margin-top: 0px;
+  padding: none;
+  width: max-content;
+  padding-left: 20px;
+}
+
+.contact_card_heading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: left;
+  color: #000000;
+}
+
+.contact_card_content {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  color: #000000;
 }
 
 @media (max-width: 768px) {
@@ -1060,6 +1104,20 @@ td:nth-child(5) {
   margin-left: 2%;
 }
 
+.grid_contact {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr); */
+  margin-top: 2%;
+  column-gap: auto;
+  display: flex;
+  justify-content: left;
+}
+
+.grid_contact a {
+  text-decoration: none;
+}
+
 .CompanyContent_info {
   font-size: 16px;
   font-weight: 600;
@@ -1313,14 +1371,14 @@ td:nth-child(5) {
 }
 
 .FinanceTable th {
-  font-size: 22px;
+  font-size: 15px;
   color: #000000;
   width: max-content;
   background: inherit; /* Inherit the background color */
 }
 
 .FinanceTable td {
-  font-size: 22px;
+  font-size: 15px;
   color: #64758f;
   width: max-content;
   background: inherit; /* Inherit the background color */
@@ -1329,7 +1387,7 @@ td:nth-child(5) {
   gap: 10px;
   opacity: 0px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 23.44px;
   letter-spacing: 0.10000000149011612px;
