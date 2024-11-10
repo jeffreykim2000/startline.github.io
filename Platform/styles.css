@@ -19,6 +19,7 @@ body {
   opacity: 1;
   padding: none;
   margin: none;
+  padding: 10px 12px 10px 50px;
 }
 
 .logo_sim {
@@ -73,7 +74,7 @@ body {
 
 .menu_middle {
   position: relative;
-  top: 28%;
+  top: 33%;
   left: 0;
   width: fit-content;
   text-align: left;
@@ -81,7 +82,7 @@ body {
 
 .menu_bottom {
   position: absolute;
-  bottom: 7%;
+  bottom: 3%;
   left: 0;
   width: max-content;
   text-align: left;
@@ -91,6 +92,10 @@ body {
   position: fixed;
   bottom: 6%;
   width: 75%;
+}
+
+.menu_bottom_similarcompanies a {
+  text-decoration: none;
 }
 
 .content {
@@ -350,7 +355,7 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   position: fixed;
-  left: 45%;
+  left: 50%;
 }
 
 .profile_title {
@@ -372,6 +377,7 @@ body {
   text-align: left;
   color: #64758f;
   display: inline-block;
+  padding-left: 3%;
 }
 
 .profile_heading1 {
@@ -388,16 +394,16 @@ body {
 }
 
 .profile_heading2 {
-  width: 100px;
+  width: max-content;
   height: 42px;
-  gap: 0px;
   opacity: 1;
   font-size: 16px;
   font-weight: 600;
-  line-height: 0px;
+  line-height: 20px;
   letter-spacing: 0.10000000149011612px;
   text-align: left;
   color: #64758f;
+  padding: 8px;
 }
 
 .profile_heading_survey {
@@ -474,7 +480,7 @@ body {
   margin-top: 0;
   border: none;
   margin-left: auto; /* Push the button to the right */
-  margin-right: 250px;
+  margin-right: 20%;
 }
 
 .Search {
@@ -588,19 +594,16 @@ body {
 .filters3 {
   font-size: 16px;
   font-weight: 400;
-  line-height: 20.83px;
+  line-height: 20px;
   text-align: left;
   color: #64758f80;
   border: 1px solid var(--Lines, #eaf0ff);
   box-shadow: 0px 4px 20px -4px #2f56a514;
   background: #ffffff;
-  width: 50%;
+  width: max-content;
   height: max-content;
-  padding: 8px 8px 8px 8px;
-  gap: 15px;
+  padding: 8px 100px 8px 8px;
   border-radius: 10px;
-  border: 1px 0px 0px 0px;
-  margin: 1%;
 }
 
 .Searchfilters {
@@ -817,8 +820,8 @@ body {
 
 .team {
   border-bottom: 1px solid var(--Lines, #eaf0ff);
-  width: Fill (670px) px;
-  height: Hug (105px) px;
+  width: max-content;
+  height: fit-content;
   padding: 20px 0px 0px 0px;
   gap: 20px;
   border: 0px 0px 1px 0px;
@@ -908,7 +911,7 @@ input[type="file"]::before {
 .CompanyName {
   font-size: 32px;
   font-weight: 500;
-  line-height: 41.66px;
+  line-height: 30px;
   text-align: left;
   color: #171b23;
   padding-left: 3%;
@@ -922,6 +925,8 @@ input[type="file"]::before {
   text-align: left;
   color: #2962ff;
   padding-top: 10px;
+  background: transparent;
+  border: none;
 }
 
 .CompanyContentTab {
@@ -1012,7 +1017,7 @@ input[type="file"]::before {
   border: 1px solid var(--Lines, #eaf0ff);
   box-shadow: 0px 4px 20px -4px #2f56a514;
   background: #ffffff;
-  width: 90%;
+  width: 95vh;
   height: max-content;
   padding: 8px;
   gap: 15px;
@@ -1039,7 +1044,7 @@ tr {
 }
 
 .bookmark {
-  width: 100vh;
+  width: 98vh;
   margin: none;
   padding: none;
   border-collapse: collapse;
@@ -1104,6 +1109,10 @@ td:nth-child(5) {
   margin-left: 2%;
 }
 
+.grid_recommendation a {
+  text-decoration: none;
+}
+
 .grid_contact {
   /* display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1135,6 +1144,16 @@ td:nth-child(5) {
   width: fit-content;
 }
 
+.CompanyContent_productName {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #171b23;
+  width: max-content;
+}
+
 .CompanyContent_description {
   font-size: 20px;
   font-weight: 600;
@@ -1142,14 +1161,16 @@ td:nth-child(5) {
   letter-spacing: 0.10000000149011612px;
   text-align: left;
   color: #171b23;
+  width: max-content;
 }
 
 .CompanyContent_content {
   font-size: 16px;
   font-weight: 400;
-  line-height: 20.83px;
+  line-height: 20px;
   text-align: left;
   color: #64758f;
+  width: fit-content;
 }
 
 .logo_startup {
@@ -1242,7 +1263,7 @@ td:nth-child(5) {
   border: 1px solid #d4e0ff;
   display: flex;
   justify-content: left;
-  width: 95%;
+  width: fit-content;
   height: max-content;
   padding: 20px;
   gap: 15px;
@@ -1250,7 +1271,7 @@ td:nth-child(5) {
   border: 1px 0px 0px 0px;
   opacity: 1;
   margin-bottom: 5%;
-  margin-right: none;
+  margin-right: 20%;
 }
 
 .flex_withBox.selected {
@@ -1272,6 +1293,7 @@ td:nth-child(5) {
   text-align: left;
   color: #64758f;
   padding-top: 2%;
+  width: 100%;
 }
 
 .Price {
@@ -1281,6 +1303,7 @@ td:nth-child(5) {
   letter-spacing: -0.02em;
   text-align: left;
   color: #2962ff;
+  width: max-content;
 }
 
 .plans {
@@ -1331,15 +1354,16 @@ td:nth-child(5) {
   padding-top: 20px;
 }
 .fas {
-  margin-right: 15px;
-  margin-top: 30px;
+  margin-left: 15px;
+  margin-top: 0px;
   font-size: 27px; /* Increase the icon size */
+  line-height: 30px;
 }
 
 .Members_companyName {
   font-size: 24px;
   font-weight: 600;
-  line-height: 28.8px;
+  line-height: 30px;
   text-align: left;
   color: #171b23;
   margin-top: 35px;
@@ -1394,4 +1418,26 @@ td:nth-child(5) {
   text-align: left;
   color: #2962ff;
   margin-bottom: 2%;
+}
+
+.productInfo {
+  text-decoration: none;
+  width: max-content;
+  color: #000000;
+}
+
+.productInfo:hover {
+  color: #2962ff;
+}
+
+.margin_right_3 {
+  margin-right: 3%;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  gap: 0px;
+  border: 2px 0px 0px 0px;
+  opacity: 1;
 }
