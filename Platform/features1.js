@@ -12,7 +12,7 @@ addSectionBtn.addEventListener("click", function () {
 });
 
 const productsContainer = document.getElementById("productsContainer");
-const addProductBtn = document.querySelector(".AddRow");
+const addProductBtn = document.getElementById("AddProductBtn");
 
 addProductBtn.addEventListener("click", function () {
   const originalProduct = document.querySelector(".product");
@@ -28,3 +28,36 @@ function toggleBorder(checkbox) {
     parentArticle.classList.remove("selected");
   }
 }
+
+let memberCount = 1;
+
+document.getElementById("addTeamBtn").addEventListener("click", function () {
+  memberCount++;
+  const newTeamMember = document.createElement("div");
+  newTeamMember.className = "TeamInfo";
+  newTeamMember.innerHTML = `
+                <br />
+                <p class="Member_title">Member ${memberCount}</p>
+                <form>
+                    <label for="email" class="profile_heading">Name</label>
+                    <input type="text" id="email" name="email" placeholder="name@company.com" class="filters2" />
+                    <br />
+                    <label for="employee" class="profile_heading">Department</label>
+                    <input type="text" id="employee" name="employee" placeholder="Jeffrey Kim" class="filters2" />
+                    <br />
+                    <label for="employee" class="profile_heading">Role</label>
+                    <input type="text" id="employee" name="employee" placeholder="Jeffrey Kim" class="filters2" />
+                    <br />
+                    <label for="website" class="profile_heading">Work Email</label>
+                    <input type="text" id="website" name="website" placeholder="www.startline.vip" class="filters2" />
+                    <br />
+                    <label for="phone" class="profile_heading">Work Phone</label>
+                    <input type="text" id="phone" name="phone" placeholder="xxxx-xxxx" class="filters2" />
+                    <br />
+                    <label for="employee" class="profile_heading">Linkedin URL</label>
+                    <input type="text" id="employee" name="employee" placeholder="Jeffrey Kim" class="filters2" />
+                    <br />
+                </form>
+            `;
+  document.getElementById("TeamContainer").appendChild(newTeamMember);
+});

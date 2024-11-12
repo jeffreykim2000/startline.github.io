@@ -17,9 +17,8 @@ body {
   height: 30px;
   gap: 0px;
   opacity: 1;
-  padding: none;
   margin: none;
-  padding: 10px 12px 10px 50px;
+  padding: 10px 20px 10px 50px;
 }
 
 .logo_sim {
@@ -29,6 +28,15 @@ body {
   opacity: 1;
   padding: none;
   margin: none;
+}
+
+.logo_recommendation {
+  width: 110px;
+  height: 30px;
+  gap: 0px;
+  opacity: 1;
+  margin: none;
+  padding: 10px 10px 10px 0px;
 }
 
 /* Change styles for span and cancel button on extra small screens */
@@ -118,12 +126,14 @@ body {
 .menu_title_1 {
   width: max-content;
   height: max-content;
-  padding: 10px 12px 0px 50px;
+  padding: 5px 12px 5px 12px;
   gap: 10px;
-  border-radius: 10px 0px 0px 0px;
+  border-radius: 10px;
   opacity: 0px;
   background: #2962ff1a;
   border-radius: 10px;
+  color: #2962ff;
+  margin: 0px 0px 0px 40px;
 }
 
 .menu_title_1 a {
@@ -139,7 +149,7 @@ body {
 .menu_title_2 {
   width: max-content;
   height: max-content;
-  padding: 10px 12px 0px 50px;
+  padding: 5px 12px 5px 12px;
   gap: 10px;
   border-radius: 10px 0px 0px 0px;
   opacity: 0px;
@@ -150,6 +160,7 @@ body {
   letter-spacing: 0.10000000149011612px;
   text-align: left;
   color: #64758f;
+  margin: 0px 0px 0px 40px;
 }
 
 .menu_title_2 a {
@@ -204,7 +215,7 @@ body {
   border: 1px solid #d4e0ff;
   box-shadow: 0px 4px 100px -4px #2f56a514;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   margin-top: 5%;
   margin: 3%;
 }
@@ -234,15 +245,17 @@ body {
   letter-spacing: 0.1em;
   text-align: left;
   color: #2962ff;
+  margin-bottom: 10px;
 }
 
 .weeklyStats_subtitle {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 700;
   line-height: 30px;
   text-align: left;
   color: #152f56;
-  padding-top: 8px;
+  padding: none;
+  margin-bottom: 40px;
 }
 
 .weeklyStats_button {
@@ -265,11 +278,29 @@ body {
 .recommendation_title {
   font-size: 24px;
   font-weight: 600;
-  line-height: 10px;
+  line-height: 23.44px;
   text-align: left;
   color: #171b23;
-  margin: 3%;
+  margin-left: 3%;
+  margin-right: 1%;
+  padding: none;
+  margin-top: 3px;
 }
+
+.PoweredByAI {
+  width: max-content;
+  height: max-content;
+  padding: 4px 18px 4px 18px;
+  border-radius: 50px;
+  opacity: 1;
+  background: linear-gradient(90deg, #d2dffc 0%, #ebeafb 100%);
+  color: linear-gradient(90deg, #2962ff 100%, #7157f1 100%);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.44px;
+  text-align: center;
+}
+
 .TodayRecommendation {
   width: 85%;
   height: max-content;
@@ -379,7 +410,7 @@ body {
   text-align: left;
   color: #64758f;
   display: inline-block;
-  padding-left: 3%;
+  padding-left: none;
 }
 
 .profile_heading1 {
@@ -441,6 +472,14 @@ body {
 }
 
 .Financials_title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26.04px;
+  text-align: left;
+  color: #2962ff;
+}
+
+.Member_title {
   font-size: 20px;
   font-weight: 500;
   line-height: 26.04px;
@@ -590,7 +629,7 @@ body {
   gap: 15px;
   border-radius: 10px;
   border: 1px 0px 0px 0px;
-  margin: 1%;
+  margin: 5px;
 }
 
 .filters3 {
@@ -630,9 +669,9 @@ body {
 }
 
 .card {
-  width: 75%;
+  width: 85%;
   height: 75%;
-  padding: 20px 15px 30px 30px;
+  padding: 20px 0px 30px 20px;
   gap: 0px;
   border-radius: 30px;
   opacity: 1;
@@ -660,7 +699,7 @@ body {
 .card_similarcompanies {
   width: fit-content; /* Adjust the percentage to fit 4 cards in a row */
   height: fit-content;
-  padding: 20px 50px 20px 50px;
+  padding: 20px 20px 20px 20px;
   gap: 30px;
   border-radius: 30px;
   background: #ffffff;
@@ -673,11 +712,11 @@ body {
 
 .card_top {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .card_right {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .card_bottomright {
@@ -686,8 +725,8 @@ body {
   line-height: 15px;
   text-align: right;
   color: #2962ff;
-  margin-top: 15px;
-  padding-right: 10%;
+  margin-top: 20px;
+  padding-right: 15%;
 }
 
 .card_heading {
@@ -704,6 +743,7 @@ body {
   line-height: 18px;
   text-align: left;
   color: #000000;
+  width: 85%;
 }
 
 .card_technology {
@@ -1034,10 +1074,12 @@ td {
   border: none;
   text-align: left;
   padding: 10px 20px;
+  width: max-content;
 }
 
 th {
   background: #edf1f9;
+  width: max-content;
 }
 
 tr {
@@ -1105,10 +1147,17 @@ td:nth-child(5) {
 
 .grid_recommendation {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  margin-top: 1%;
+  margin-top: 2%;
   margin-left: 2%;
+  width: 100%;
+  column-gap: 0%;
+}
+
+.recommendation_bottom {
+  position: fixed;
+  bottom: 6%;
 }
 
 .grid_recommendation a {
@@ -1442,6 +1491,34 @@ td:nth-child(5) {
   border: 2px 0px 0px 0px;
   opacity: 1;
   line-height: 23.44px;
+  padding: none;
+}
+
+.icon_menu {
+  width: 24px;
+  height: 24px;
+  border: 2px 0px 0px 0px;
+  opacity: 1;
+  line-height: 23.44px;
+  padding-top: 1%;
+}
+
+.icon_members {
+  width: 24px;
+  height: 24px;
+  border: 2px 0px 0px 0px;
+  opacity: 1;
+  line-height: 23.44px;
+  padding: none;
+  margin-top: 8%;
+}
+
+.icon_PoweredByAI {
+  width: 19px;
+  height: 21px;
+  gap: 0px;
+  opacity: 1;
+  line-height: 23.44px;
   padding-right: 10px;
 }
 
@@ -1450,4 +1527,21 @@ td:nth-child(5) {
   height: 100%;
   gap: 0px;
   opacity: 0px;
+}
+
+.similarYN {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18.23px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: #64758f;
+}
+
+.similarYNIcon {
+  width: 20px;
+  height: 20px;
+  gap: 0px;
+  opacity: 1;
+  margin-right: 5px;
 }
