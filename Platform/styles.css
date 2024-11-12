@@ -139,7 +139,7 @@ body {
 .menu_title_2 {
   width: max-content;
   height: max-content;
-  padding: 10px 12px a0px 50px;
+  padding: 10px 12px 0px 50px;
   gap: 10px;
   border-radius: 10px 0px 0px 0px;
   opacity: 0px;
