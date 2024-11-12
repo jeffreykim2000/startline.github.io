@@ -116,12 +116,14 @@ body {
 }
 
 .menu_title_1 {
-  width: Fixed (263px) px;
-  height: Hug (44px) px;
-  padding: 10px 12px 10px 50px;
+  width: max-content;
+  height: max-content;
+  padding: 10px 12px 0px 50px;
   gap: 10px;
   border-radius: 10px 0px 0px 0px;
   opacity: 0px;
+  background: #2962ff1a;
+  border-radius: 10px;
 }
 
 .menu_title_1 a {
@@ -135,9 +137,9 @@ body {
 }
 
 .menu_title_2 {
-  width: Fixed (263px) px;
-  height: Hug (44px) px;
-  padding: 10px 12px 10px 50px;
+  width: max-content;
+  height: max-content;
+  padding: 10px 12px 0px 50px;
   gap: 10px;
   border-radius: 10px 0px 0px 0px;
   opacity: 0px;
@@ -1437,7 +1439,15 @@ td:nth-child(5) {
 .icon {
   width: 24px;
   height: 24px;
-  gap: 0px;
   border: 2px 0px 0px 0px;
   opacity: 1;
+  line-height: 23.44px;
+  padding-right: 10px;
+}
+
+.GetStarted_ThisWeekOnStartline {
+  width: 100%;
+  height: 100%;
+  gap: 0px;
+  opacity: 0px;
 }
