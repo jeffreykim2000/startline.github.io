@@ -18,7 +18,7 @@ body {
   gap: 0px;
   opacity: 1;
   margin: none;
-  padding: 10px 20px 10px 50px;
+  padding: 10px 20px 10px 10px;
 }
 
 .logo_sim {
@@ -31,7 +31,7 @@ body {
 }
 
 .logo_recommendation {
-  width: 110px;
+  width: 100px;
   height: 30px;
   gap: 0px;
   opacity: 1;
@@ -183,7 +183,7 @@ body {
   line-height: 43.2px;
   text-align: center;
   color: #171b23;
-  margin-top: 3%;
+  margin-top: 2%;
   margin-right: 20%;
 }
 
@@ -216,8 +216,9 @@ body {
   box-shadow: 0px 4px 100px -4px #2f56a514;
   display: flex;
   justify-content: left;
-  margin-top: 5%;
-  margin: 3%;
+  margin-top: 0.5%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .weeklyStats_left {
@@ -227,6 +228,14 @@ body {
   opacity: 0px;
   padding: none;
   margin: none;
+}
+
+.weeklyStats_left a {
+  text-decoration: none;
+}
+
+.weeklyStats_button:hover {
+  color: #cfe0ff; /* Light blue text color on hover */
 }
 
 .weeklyStats_right {
@@ -273,6 +282,7 @@ body {
   text-align: left;
   color: #ffffff;
   margin-top: 12px;
+  transition: color 0.3s; /* Smooth transition for text color change */
 }
 
 .recommendation_title {
@@ -284,7 +294,7 @@ body {
   margin-left: 3%;
   margin-right: 1%;
   padding: none;
-  margin-top: 3px;
+  margin-top: 3%;
 }
 
 .PoweredByAI {
@@ -299,6 +309,7 @@ body {
   font-weight: 500;
   line-height: 23.44px;
   text-align: center;
+  margin-top: 3%;
 }
 
 .TodayRecommendation {
@@ -505,6 +516,14 @@ body {
   border: none;
 }
 
+.AddRow:hover {
+  color: #cfe0ff; /* Light blue text color on hover */
+}
+
+.button:hover {
+  color: #cfe0ff; /* Light blue text color on hover */
+}
+
 .button_right {
   width: max-content;
   height: max-content;
@@ -669,6 +688,18 @@ body {
 }
 
 .card {
+  width: 75%;
+  height: 75%;
+  padding: 30px 20px 30px 30px;
+  gap: 0px;
+  border-radius: 30px;
+  opacity: 1;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px -4px #2f56a514;
+  margin: 10px;
+}
+
+.card_AIRecommend {
   width: 85%;
   height: 75%;
   padding: 20px 0px 30px 20px;
@@ -715,6 +746,11 @@ body {
   justify-content: left;
 }
 
+.card_top_AIRecommend {
+  display: flex;
+  justify-content: left;
+}
+
 .card_right {
   padding-left: 10px;
 }
@@ -726,6 +762,27 @@ body {
   text-align: right;
   color: #2962ff;
   margin-top: 20px;
+  padding-right: 15%;
+}
+
+.card_bottomright_AIRecommend {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+  text-align: right;
+  color: #2962ff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 15%;
+}
+
+.card_bottomright_AIRecommend a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+  text-align: right;
+  color: #2962ff;
+  margin-top: 10px;
   padding-right: 15%;
 }
 
@@ -746,6 +803,23 @@ body {
   width: 85%;
 }
 
+.card_heading_AIRecommend {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
+}
+
+.card_content_AIRecommend {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+  width: 100%;
+}
+
 .card_technology {
   width: fit-content;
   height: fit-content;
@@ -755,6 +829,22 @@ body {
   opacity: 0px;
   background: #e7eeff;
   font-size: 13px;
+  font-weight: 600;
+  line-height: 10px;
+  text-align: left;
+  color: #2962ff;
+  margin-top: 8px;
+}
+
+.card_technology_AIRecommend {
+  width: fit-content;
+  height: fit-content;
+  padding: 6px 8px 6px 8px;
+  gap: 10px;
+  border-radius: 30px;
+  opacity: 0px;
+  background: #e7eeff;
+  font-size: 11px;
   font-weight: 600;
   line-height: 10px;
   text-align: left;
@@ -816,6 +906,20 @@ body {
   line-height: 13px;
 }
 
+.target_AIRecommend {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 10px 5px 10px;
+  gap: 5px;
+  border-radius: 13px;
+  opacity: 0px;
+  background: #f5f5f5;
+  margin-right: 5px;
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13px;
+}
 .card a {
   text-decoration: none;
 }
@@ -1149,15 +1253,10 @@ td:nth-child(5) {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  margin-top: 2%;
   margin-left: 2%;
   width: 100%;
   column-gap: 0%;
-}
-
-.recommendation_bottom {
-  position: fixed;
-  bottom: 6%;
+  margin-top: 1%;
 }
 
 .grid_recommendation a {
@@ -1532,7 +1631,7 @@ td:nth-child(5) {
 .similarYN {
   font-size: 12px;
   font-weight: 400;
-  line-height: 18.23px;
+  line-height: 10px;
   text-align: left;
   text-decoration-skip-ink: none;
   color: #64758f;
@@ -1543,5 +1642,5 @@ td:nth-child(5) {
   height: 20px;
   gap: 0px;
   opacity: 1;
-  margin-right: 5px;
+  margin-left: 5px;
 }
