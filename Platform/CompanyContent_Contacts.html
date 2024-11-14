@@ -6,12 +6,15 @@
     <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
     <title>Startline</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <div class="platform">
       <article class="menu">
         <article class="menu_top">
-          <a href="../index.html" target="_blank"><img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo" /></a>
+          <a href="../index.html" target="_blank"
+            ><img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo_menu"
+          /></a>
           <br />
           <p class="menu_title_2">
             <a href="GetStarted.html"><img src="./icon/GetStarted.png" class="icon_menu" />Get Started</a>
@@ -55,9 +58,11 @@
                 <p class="target">tag-2</p>
                 <p class="target">tag-3</p>
               </article>
-              <article class="flex">
-                <p>Like</p>
-                <p>Dislike</p>
+              <article class="flex_companycontentPreference">
+                <img src="./icon/Like.png" class="preferenceIcon" />
+                <p class="preference">Like</p>
+                <img src="./icon/Dislike.png" class="preferenceIcon" />
+                <p class="preference">Dislike</p>
               </article>
             </article>
             <article class="CompanyContent">
@@ -84,130 +89,76 @@
             <a href="CompanyContent_BasicInformation.html" class="CompanyCardDetail_title"> Basic Information </a>
             <a href="CompanyContent_Product.html" class="CompanyCardDetail_title"> Product </a>
             <a href="CompanyContent_Finance.html" class="CompanyCardDetail_title"> Finance </a>
-            <a href="CompanyContent_Contacts.html" class="CompanyCardDetail_title"> Contacts </a>
-            <a href="CompanyContent_Comment.html" class="CompanyCardDetail_title"> Comments </a>
-            <a href="CompanyContent_News.html" class="CompanyCardDetail_title"> News </a>
+            <a href="CompanyContent_Contacts.html" class="CompanyCardDetail_title1"> Contacts </a>
+            <!-- <a href="CompanyContent_Comment.html" class="CompanyCardDetail_title"> Comments </a>
+            <a href="CompanyContent_News.html" class="CompanyCardDetail_title"> News </a> -->
           </article>
           <article class="grid_contact">
-            <a href="/startline/Platform/CompanyContent_BasicInformation.html">
-              <article class="contact_card">
-                <article class="card_top">
-                  <img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo" />
-                  <article class="card_right">
-                    <p class="contact_card_heading">Name</p>
-                    <p class="contact_card_content">Role</p>
-                    <p class="contact_card_content">Region</p>
-                  </article>
-                  <article class="contact_card_viewmore">View More</article>
-                </article>
-                <br />
-                <article class="flex_left">
-                  <p class="contact_card_heading">Work email</p>
-                  <p class="contact_card_content">Work No.</p>
-                </article>
-                <article class="flex_left">
-                  <p class="contact_card_heading">Work No.</p>
-                  <p class="contact_card_content">Work No.</p>
+            <article class="contact_card">
+              <article class="card_top">
+                <img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo" />
+                <article class="card_right">
+                  <p class="contact_card_heading">Name</p>
+                  <p class="contact_card_content">Role</p>
+                  <p class="contact_card_content">Region</p>
                 </article>
               </article>
-            </a>
-            <a href="/startline/Platform/CompanyContent_BasicInformation.html">
-              <article class="contact_card">
-                <article class="card_top">
-                  <img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo" />
-                  <article class="card_right">
-                    <p class="contact_card_heading">Name</p>
-                    <p class="contact_card_content">Role</p>
-                    <p class="contact_card_content">Region</p>
-                  </article>
-                  <article class="contact_card_viewmore">View More</article>
-                </article>
-                <br />
-                <article class="flex_left">
-                  <p class="contact_card_heading">Work email</p>
-                  <p class="contact_card_content">Work No.</p>
-                </article>
-                <article class="flex_left">
-                  <p class="contact_card_heading">Work No.</p>
-                  <p class="contact_card_content">Work No.</p>
-                </article>
+              <article class="flex_left">
+                <p class="contact_card_heading">Work email</p>
+                <p class="contact_card_content">Work No.</p>
               </article>
-            </a>
-            <a href="/startline/Platform/CompanyContent_BasicInformation.html">
-              <article class="contact_card">
-                <article class="card_top">
-                  <img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo" />
-                  <article class="card_right">
-                    <p class="contact_card_heading">Name</p>
-                    <p class="contact_card_content">Role</p>
-                    <p class="contact_card_content">Region</p>
-                  </article>
-                  <article class="contact_card_viewmore">View More</article>
-                </article>
-                <br />
-                <article class="flex_left">
-                  <p class="contact_card_heading">Work email</p>
-                  <p class="contact_card_content">Work No.</p>
-                </article>
-                <article class="flex_left">
-                  <p class="contact_card_heading">Work No.</p>
-                  <p class="contact_card_content">Work No.</p>
-                </article>
+              <article class="flex_left">
+                <p class="contact_card_heading">Work No.</p>
+                <p class="contact_card_content">Work No.</p>
               </article>
-            </a>
+              <div class="contact_card_viewmore" onclick="myFunction()">
+                View More
+                <span class="popuptext" id="myPopup">
+                  <article class="contact_card">
+                    <article class="card_top">
+                      <img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo" />
+                      <article class="card_right">
+                        <p class="contact_card_heading">Name</p>
+                        <p class="contact_card_content">Company Name</p>
+                      </article>
+                    </article>
+                    <article class="flex_left">
+                      <article>
+                        <p class="contact_popup_heading">Department</p>
+                        <p class="contact_popup_heading">Role</p>
+                        <p class="contact_popup_heading">Work Email</p>
+                        <p class="contact_popup_heading">Work No.</p>
+                        <p class="contact_popup_heading">Linkedin URL</p>
+                      </article>
+                      <article>
+                        <p class="contact_popup_content">Your department</p>
+                        <p class="contact_popup_content">Your company position</p>
+                        <p class="contact_popup_content">name@company.com</p>
+                        <p class="contact_popup_content">xxxx-xxxx</p>
+                        <p class="contact_popup_content">www.linkedin.com</p>
+                      </article>
+                    </article>
+                  </article>
+                </span>
+              </div>
+            </article>
           </article>
+
           <article class="menu_bottom_similarcompanies">
             <p class="SimilarCompanies">Similiar Companies</p>
             <article class="grid_similarcompanies">
-              <article class="card_similarcompanies">
-                <a href="CompanyContent_BasicInformation.html">
+              <a href="CompanyContent_BasicInformation.html">
+                <article class="card_similarcompanies">
                   <article class="card_top">
                     <img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo_sim" />
                     <article class="card_right">
                       <p class="card_heading">Company</p>
                       <p class="card_content">Region</p>
-                      <p class="card_technology">Technology</p>
+                      <p class="card_technology_sim">Technology</p>
                     </article>
                   </article>
-                </a>
-              </article>
-              <article class="card_similarcompanies">
-                <a href="CompanyContent_BasicInformation.html">
-                  <article class="card_top">
-                    <img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo_sim" />
-                    <article class="card_right">
-                      <p class="card_heading">Company</p>
-                      <p class="card_content">Region</p>
-                      <p class="card_technology">Technology</p>
-                    </article>
-                  </article>
-                </a>
-              </article>
-              <article class="card_similarcompanies">
-                <a href="CompanyContent_BasicInformation.html">
-                  <article class="card_top">
-                    <img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo_sim" />
-                    <article class="card_right">
-                      <p class="card_heading">Company</p>
-                      <p class="card_content">Region</p>
-                      <p class="card_technology">Technology</p>
-                    </article>
-                  </article>
-                </a>
-              </article>
-
-              <article class="card_similarcompanies">
-                <a href="CompanyContent_BasicInformation.html">
-                  <article class="card_top">
-                    <img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="logo_sim" />
-                    <article class="card_right">
-                      <p class="card_heading">Company</p>
-                      <p class="card_content">Region</p>
-                      <p class="card_technology">Technology</p>
-                    </article>
-                  </article>
-                </a>
-              </article>
+                </article>
+              </a>
             </article>
           </article>
         </article>

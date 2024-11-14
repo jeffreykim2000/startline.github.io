@@ -21,9 +21,17 @@ body {
   padding: 10px 20px 10px 10px;
 }
 
+.logo_menu {
+  width: 110px;
+  height: 30px;
+  gap: 0px;
+  opacity: 1;
+  padding: 10px 20px 10px 50px;
+}
+
 .logo_sim {
-  width: 50%;
-  height: 25%;
+  width: 40%;
+  height: 20%;
   gap: 0px;
   opacity: 1;
   padding: none;
@@ -98,7 +106,7 @@ body {
 
 .menu_bottom_similarcompanies {
   position: fixed;
-  bottom: 6%;
+  bottom: 3%;
   width: 75%;
 }
 
@@ -127,20 +135,20 @@ body {
   width: max-content;
   height: max-content;
   padding: 5px 12px 5px 12px;
-  gap: 10px;
   border-radius: 10px;
   opacity: 0px;
   background: #2962ff1a;
-  border-radius: 10px;
   color: #2962ff;
   margin: 0px 0px 0px 40px;
+  display: flex;
+  align-items: center;
 }
 
 .menu_title_1 a {
   text-decoration: none;
   font-size: 22px;
   font-weight: 500;
-  line-height: 23.44px;
+  line-height: auto;
   letter-spacing: 0.10000000149011612px;
   text-align: left;
   color: #2962ff;
@@ -150,9 +158,8 @@ body {
   width: max-content;
   height: max-content;
   padding: 5px 12px 5px 12px;
-  gap: 10px;
-  border-radius: 10px 0px 0px 0px;
-  opacity: 0px;
+  border-radius: 10px;
+  opacity: 1;
   text-decoration: none;
   font-size: 22px;
   font-weight: 500;
@@ -161,13 +168,15 @@ body {
   text-align: left;
   color: #64758f;
   margin: 0px 0px 0px 40px;
+  display: flex;
+  align-items: center;
 }
 
 .menu_title_2 a {
   text-decoration: none;
   font-size: 22px;
   font-weight: 500;
-  line-height: 23.44px;
+  line-height: auto;
   letter-spacing: 0.10000000149011612px;
   text-align: left;
   color: #64758f;
@@ -288,18 +297,17 @@ body {
 .recommendation_title {
   font-size: 24px;
   font-weight: 600;
-  line-height: 23.44px;
+  line-height: 24px;
   text-align: left;
   color: #171b23;
   margin-left: 3%;
   margin-right: 1%;
   padding: none;
-  margin-top: 3%;
 }
 
 .PoweredByAI {
   width: max-content;
-  height: max-content;
+  height: 24px;
   padding: 4px 18px 4px 18px;
   border-radius: 50px;
   opacity: 1;
@@ -307,9 +315,10 @@ body {
   color: linear-gradient(90deg, #2962ff 100%, #7157f1 100%);
   font-size: 20px;
   font-weight: 500;
-  line-height: 23.44px;
+  line-height: 24px;
   text-align: center;
-  margin-top: 3%;
+  display: flex;
+  justify-content: left;
 }
 
 .TodayRecommendation {
@@ -402,6 +411,14 @@ body {
   left: 50%;
 }
 
+.scroll {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  height: calc(100vh - 450px);
+}
+
 .profile_title {
   font-size: 25px;
   font-weight: 500;
@@ -473,13 +490,23 @@ body {
 .AddRow {
   cursor: pointer;
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  padding: 10px 0px;
+  background-color: transparent;
+  color: #007bff;
   border: none;
   border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.DeleteRow {
+  width: 24px;
+  height: 24px;
+  border: 2px 0px 0px 0px;
+  opacity: 1;
+  line-height: 23.44px;
+  margin-right: 10px; /* Adjust the margin as needed */
+  vertical-align: middle;
 }
 
 .Financials_title {
@@ -495,6 +522,10 @@ body {
   font-weight: 500;
   line-height: 26.04px;
   text-align: left;
+  color: #2962ff;
+}
+
+.blueText {
   color: #2962ff;
 }
 
@@ -517,7 +548,7 @@ body {
 }
 
 .AddRow:hover {
-  color: #cfe0ff; /* Light blue text color on hover */
+  color: #5f96fc; /* Light blue text color on hover */
 }
 
 .button:hover {
@@ -714,24 +745,26 @@ body {
 .contact_card {
   width: max-content;
   height: max-content;
-  padding: 20px 15px 15px 30px;
+  padding: 15px 20px 10px 20px;
   gap: 0px;
   border-radius: 30px;
   opacity: 1;
   background: #ffffff;
   box-shadow: 0px 4px 15px -4px #2f56a514;
-  margin: 10px;
+  flex: 0 0 auto; /* Prevent cards from growing/shrinking */
+  margin-right: 20px; /* Add margin between each contact card */
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .grid a {
   text-decoration: none;
 }
-
 .card_similarcompanies {
-  width: fit-content; /* Adjust the percentage to fit 4 cards in a row */
+  width: fit-content;
   height: fit-content;
-  padding: 20px 20px 20px 20px;
-  gap: 30px;
+  padding: 20px 40px 20px 20px;
+  gap: 0px;
   border-radius: 30px;
   background: #ffffff;
   box-shadow: 0px 4px 15px -4px #2f56a514;
@@ -836,6 +869,22 @@ body {
   margin-top: 8px;
 }
 
+.card_technology_sim {
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 10px 8px 10px;
+  gap: 10px;
+  border-radius: 30px;
+  opacity: 0px;
+  background: #e7eeff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 10px;
+  text-align: left;
+  color: #2962ff;
+  margin-top: 8px;
+}
+
 .card_technology_AIRecommend {
   width: fit-content;
   height: fit-content;
@@ -853,15 +902,28 @@ body {
 }
 
 .contact_card_viewmore {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-size: 14px;
   font-weight: 600;
   line-height: 30px;
   text-align: right;
   color: #2962ff;
-  margin-top: 0px;
+  margin: none;
   padding: none;
   width: max-content;
-  padding-left: 20px;
+  padding-left: 70%;
+  background: transparent;
+  border: none;
+}
+
+.contact_card_viewmore:hover {
+  color: #5f96fc;
 }
 
 .contact_card_heading {
@@ -927,6 +989,12 @@ body {
 .flex {
   display: flex;
   justify-content: space-between;
+  margin: 20px;
+}
+
+.flex_companycontentPreference {
+  display: flex;
+  justify-content: left;
   margin: 20px;
 }
 
@@ -1088,10 +1156,10 @@ input[type="file"]::before {
 .SimilarCompanies {
   font-size: 24px;
   font-weight: 600;
-  line-height: 28.8px;
+  line-height: 10px;
   text-align: left;
   color: #171b23;
-  margin-bottom: 1%;
+  margin-bottom: 0%;
   width: max-content;
 }
 
@@ -1106,7 +1174,7 @@ input[type="file"]::before {
   justify-content: space-evenly;
   text-align: center;
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 10px;
   padding: none;
 }
 
@@ -1130,6 +1198,23 @@ input[type="file"]::before {
   line-height: 5px;
   text-align: center;
   color: #64758f;
+  border-bottom: 1.5px solid #2962ff;
+  border: none;
+  width: max-content;
+  height: Fixed (44px) px;
+  padding-bottom: 10px;
+  gap: 10px;
+  opacity: 0px;
+  background: transparent;
+  text-decoration: none;
+}
+
+.CompanyCardDetail_title1 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 5px;
+  text-align: center;
+  color: #2962ff;
   border-bottom: 1.5px solid #2962ff;
   border: none;
   width: max-content;
@@ -1264,17 +1349,18 @@ td:nth-child(5) {
 }
 
 .grid_contact {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr); */
-  margin-top: 2%;
-  column-gap: auto;
+  margin: 0;
+  justify-content: flex-start;
   display: flex;
-  justify-content: left;
+  scroll-behavior: smooth;
+  height: calc(100vh-300px);
+
+  white-space: nowrap; /* Prevent cards from wrapping to a new line */
 }
 
 .grid_contact a {
   text-decoration: none;
+  white-space: nowrap; /* Ensure all child elements stay on the same line */
 }
 
 .CompanyContent_info {
@@ -1542,20 +1628,21 @@ td:nth-child(5) {
   overflow: hidden;
   box-shadow: none;
   background-color: inherit;
+  background-color: #f9fbff;
 }
 
 .FinanceTable th {
   font-size: 15px;
   color: #000000;
   width: max-content;
-  background: inherit; /* Inherit the background color */
+  background-color: #f9fbff;
 }
 
 .FinanceTable td {
   font-size: 15px;
   color: #64758f;
   width: max-content;
-  background: inherit; /* Inherit the background color */
+  background-color: #f9fbff;
 }
 .CompanyContent_Finance_Round_number {
   gap: 10px;
@@ -1581,7 +1668,7 @@ td:nth-child(5) {
 }
 
 .margin_right_3 {
-  margin-right: 3%;
+  margin-right: 1%;
 }
 
 .icon {
@@ -1589,7 +1676,7 @@ td:nth-child(5) {
   height: 24px;
   border: 2px 0px 0px 0px;
   opacity: 1;
-  line-height: 23.44px;
+  line-height: auto;
   padding: none;
 }
 
@@ -1599,7 +1686,8 @@ td:nth-child(5) {
   border: 2px 0px 0px 0px;
   opacity: 1;
   line-height: 23.44px;
-  padding-top: 1%;
+  margin-right: 10px; /* Adjust the margin as needed */
+  vertical-align: middle;
 }
 
 .icon_members {
@@ -1614,10 +1702,10 @@ td:nth-child(5) {
 
 .icon_PoweredByAI {
   width: 19px;
-  height: 21px;
+  height: 24px;
   gap: 0px;
   opacity: 1;
-  line-height: 23.44px;
+  line-height: 24px;
   padding-right: 10px;
 }
 
@@ -1631,10 +1719,11 @@ td:nth-child(5) {
 .similarYN {
   font-size: 12px;
   font-weight: 400;
-  line-height: 10px;
+  line-height: 20px;
   text-align: left;
   text-decoration-skip-ink: none;
   color: #64758f;
+  vertical-align: middle;
 }
 
 .similarYNIcon {
@@ -1643,4 +1732,157 @@ td:nth-child(5) {
   gap: 0px;
   opacity: 1;
   margin-left: 5px;
+}
+
+.preferenceIcon {
+  width: 25px;
+  height: 25px;
+  gap: 0px;
+  opacity: 1;
+  margin-right: 5px;
+}
+
+.preference {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: #64758f;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* font-size: 16px;
+font-weight: 400;
+line-height: 20.83px;
+text-align: left;
+color: #64758f80;
+opacity: 0px;
+
+/* adding tags */
+
+.tags-input {
+  display: inline-block;
+  position: relative;
+  border: 1px solid var(--Lines, #eaf0ff);
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0px 4px 20px -4px #2f56a514;
+  width: 250px;
+  height: fit-content;
+  background: #ffffff;
+  padding: 8px 0px 8px 8px;
+  gap: 15px;
+  margin-top: 1%;
+}
+
+.tags-input ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tags-input li {
+  display: inline-block;
+  background: #2962ff1a;
+  color: #333;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.tags-input input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.tags-input input[type="text"]:focus {
+  outline: none;
+}
+
+.tags-input .delete-button {
+  background-color: transparent;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.scroll-button {
+  padding: 0px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* The actual popup */
+.contact_card_viewmore .popuptext {
+  visibility: hidden;
+  width: max-content;
+  height: fit-content;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: fixed;
+  z-index: 1;
+  bottom: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-20%, -40%);
+}
+
+/* Toggle this class - hide and show the popup */
+.contact_card_viewmore .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contact_popup_heading {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: #64758f;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+
+.contact_popup_content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: #171b23;
+  padding-right: 20px;
 }
