@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
     <title>Startline</title>
+    <meta name="author" content="Jeffrey" />
+    <meta name="refresh" content="60" />
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -39,7 +46,7 @@
           <!-- <form action="action_page.php"> -->
           <form>
             <!-- <label for="reason">asdf</label> -->
-            <select id="reason" name="reason" class="contact_reason">
+            <select id="reason" name="reason" class="contact_reason" required>
               <option value="reason">Please choose the reason for reaching out</option>
               <option value="canada">Seeking detailed market information</option>
               <option value="usa">Exploring potential strategic partnership opportunities</option>
@@ -49,17 +56,17 @@
             </select>
             <br />
             <!-- <label for="fname">asdf</label> -->
-            <input type="text" id="fname" name="firstname" placeholder="First Name" class="short_blk" />
+            <input type="text" id="fname" name="firstname" placeholder="First Name*" class="short_blk" required />
             <!-- <label for="lname">asdf</label> -->
-            <input type="text" id="lname" name="lastname" placeholder="Last Name" class="short_blk" /> <br />
+            <input type="text" id="lname" name="lastname" placeholder="Last Name*" class="short_blk" required /> <br />
             <!-- <label for="cname">asdf</label> -->
-            <input type="text" id="cname" name="companyname" placeholder="Company Name" class="long_blk" /><br />
+            <input type="text" id="cname" name="companyname" placeholder="Company Name*" class="long_blk" required /><br />
             <!-- <label for="pnumber">asdf</label> -->
-            <input type="tel" id="pnumber" name="phonenumber" placeholder="Phone" class="short_blk" />
+            <input type="tel" id="pnumber" name="phonenumber" placeholder="Phone*" class="short_blk" required />
             <!-- <label for="email">asdf</label> -->
-            <input type="email" id="email" name="emailaddress" placeholder="Email" class="short_blk" /> <br />
+            <input type="email" id="email" name="emailaddress" placeholder="Email*" class="short_blk" required /> <br />
             <!-- <label for="message">asdf</label> -->
-            <input type="text" id="message" name="message" placeholder="Message" class="long_blk" />
+            <input type="text" id="message" name="message" placeholder="Message*" class="long_blk" required />
             <input type="submit" value="Submit" class="login_btn" />
           </form>
         </article>

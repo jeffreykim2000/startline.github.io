@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
     <title>Startline</title>
+    <meta name="author" content="Jeffrey" />
+    <meta name="refresh" content="60" />
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -34,8 +41,8 @@
           </article>
         </article>
         <article class="menu_bottom">
-          <p class="menu_title_2"><img src="./icon/Users.png" class="icon_menu" />User</p>
-          <p class="menu_title_2"><img src="./icon/PlanName.png" class="icon_menu" />Plan Name</p>
+          <p class="menu_title_4">User Nameasdfasdfsaasdfasdfasd</p>
+          <p class="menu_title_5"><span class="menu_title_5_1">Plan Name</span><span class="menu_title_5_2">1/5 seats</span></p>
           <p class="menu_title_2">
             <a href="../support.html" target="_blank"><img src="./icon/Support.png" class="icon_menu" />Support</a>
           </p>
@@ -49,30 +56,29 @@
         <article class="CustomerType1">
           <a href="Settings_account_personal.html">
             <p class="CustomerType_title">Account Settings</p>
-            <p class="CustomerType_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="CustomerType_description">Edit your account's personal profile and billing method</p>
           </a>
         </article>
         <article class="CustomerType2">
           <a href="Settings_team.html">
             <p class="CustomerType_title">Team Settings</p>
-            <p class="CustomerType_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="CustomerType_description">Manage your team members and information</p>
           </a>
         </article>
         <article class="CustomerType2">
           <a href="Settings_bookmark.html">
             <p class="CustomerType_title">Bookmark Settings</p>
-            <p class="CustomerType_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="CustomerType_description">Create, edit and delete bookmarks</p>
           </a>
         </article>
         <article class="CustomerType2">
           <a href="Settings_plan.html">
             <p class="CustomerType_title">Plan Settings</p>
-            <p class="CustomerType_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="CustomerType_description">Manage your plan</p>
           </a>
         </article>
       </article>
       <article class="profile">
-        <br />
         <br />
         <br />
         <article class="flex1">
@@ -92,32 +98,34 @@
           </article>
         </article>
         <form>
-          <!-- <label for="reason">asdf</label> -->
           <br />
-          <label for="email" class="profile_heading">Name</label>
-          <input type="text" id="email" name="email" placeholder="Bob Wang" class="filters2" />
+          <label for="email" class="profile_heading">Name*</label>
+          <input type="text" id="email" name="email" placeholder="Bob Wang" class="filters2" required />
           <br />
-          <label for="phone" class="profile_heading">Department</label>
-          <input type="text" id="phone" name="phone" placeholder="Business Development" class="filters2" />
+          <label for="phone" class="profile_heading">Department*</label>
+          <input type="text" id="phone" name="phone" placeholder="Business Development" class="filters2" required />
           <br />
-          <label for="website" class="profile_heading">Role</label>
-          <input type="text" id="website" name="website" placeholder="Manger" class="filters2" />
+          <label for="website" class="profile_heading">Role*</label>
+          <input type="text" id="website" name="website" placeholder="Manger" class="filters2" required />
           <br />
-          <label for="employee" class="profile_heading">Work Email</label>
-          <input type="text" id="employee" name="employee" placeholder="name@company.com" class="filters2" />
+          <label for="employee" class="profile_heading">Work Email*</label>
+          <input type="text" id="employee" name="employee" placeholder="name@company.com" class="filters2" required />
           <br />
-          <label for="foundingyr" class="profile_heading">Work No.</label>
-          <input type="text" id="foundingyr" name="foundingyr" placeholder="xxxx-xxxx" class="filters2" />
+          <label for="foundingyr" class="profile_heading">Work No.*</label>
+          <input type="text" id="foundingyr" name="foundingyr" placeholder="xxxx-xxxx" class="filters2" required />
           <br />
           <label for="linkedin" class="profile_heading">Linkedin URL</label>
           <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/company/acel-lab-limited" class="filters2" />
 
           <br />
-          <label for="uname" class="profile_heading">Username</label>
-          <input type="text" id="uname" name="uname" placeholder="Input your username" class="filters2" />
+          <label for="uname" class="profile_heading">Username*</label>
+          <input type="text" id="uname" name="uname" placeholder="Input your username" class="filters2" required />
           <br />
-          <label for="pword" class="profile_heading">Password</label>
-          <input type="text" id="pword" name="pword" placeholder="Input your password" class="filters2" />
+          <label for="pword" class="profile_heading">Password*</label>
+          <span class="password-input">
+            <input type="password" id="pwordInput" placeholder="At least 8 characters" name="psw" class="filters2" required />
+            <img src="./icon/Password.png" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" class="nav_language" />
+          </span>
         </form>
         <br />
         <p class="button">Save</p>
@@ -133,4 +141,5 @@
   <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
   <script src="smoothScroll.js"></script>
   <script src="lightbox-plus-jquery.js"></script>
+  <script src="features1.js"></script>
 </html>

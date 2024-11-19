@@ -1,77 +1,93 @@
-const addSectionBtn = document.getElementById("addSectionBtn");
-const sectionsContainer = document.getElementById("sectionsContainer");
-let roundNumber = 1;
+let roundCount = 1;
 
-addSectionBtn.addEventListener("click", function () {
-  const originalSection = document.querySelector(".section");
-  const newSection = originalSection.cloneNode(true);
-  sectionsContainer.appendChild(newSection);
-
-  roundNumber++;
-  updateRoundNumbers();
-
-  if (roundNumber > 1) {
-    const deleteSectionBtn = document.createElement("img");
-    deleteSectionBtn.src = "./icon/Trash.png";
-    deleteSectionBtn.className = "DeleteRow";
-    deleteSectionBtn.alt = "Delete Product";
-    deleteSectionBtn.addEventListener("click", function () {
-      newSection.remove();
-      roundNumber--;
-      updateRoundNumbers();
-    });
-    newSection.appendChild(deleteSectionBtn);
-  }
-});
-
-function updateRoundNumbers() {
-  const sections = document.querySelectorAll(".section");
-  sections.forEach((section, index) => {
-    section.querySelector(".Financials_title").textContent = `Round ${index + 1}`;
+function renumberRounds() {
+  const roundTitles = document.querySelectorAll(".Financials_title");
+  roundTitles.forEach((title, index) => {
+    title.textContent = `Round ${index + 1}`;
   });
 }
-//add product
 
-const productsContainer = document.getElementById("productsContainer");
-const addProductBtn = document.getElementById("AddProductBtn");
-
-addProductBtn.addEventListener("click", function () {
-  const originalProduct = document.querySelector(".product");
-  const newProduct = originalProduct.cloneNode(true);
-  const newProductId = "product_" + (productsContainer.children.length + 1);
-  newProduct.id = newProductId;
-
-  // Update input ids to ensure uniqueness
-  newProduct.querySelector('input[name="tag"]').id = `tag${productsContainer.children.length + 1}`;
-  newProduct.querySelector('input[name="tag"]').placeholder = "Product Name";
-  newProduct.querySelector('input[name="tag"]').value = "";
-
-  newProduct.querySelector('input[name="tag"]').id = `tag${productsContainer.children.length + 1}`;
-  newProduct.querySelector('input[name="tag"]').placeholder = "Describe the product";
-  newProduct.querySelector('input[name="tag"]').value = "";
-
-  if (productsContainer.children.length === 1) {
-    const deleteButton = document.createElement("img");
-    deleteButton.src = "./icon/Trash.png";
-    deleteButton.className = "DeleteRow";
-    deleteButton.alt = "Delete Product";
-    deleteButton.addEventListener("click", function () {
-      newProduct.remove();
-    });
-    newProduct.appendChild(deleteButton);
-  }
-
-  productsContainer.appendChild(newProduct);
+document.getElementById("addSectionBtn").addEventListener("click", function () {
+  roundCount++;
+  const newFinanceRound = document.createElement("div");
+  newFinanceRound.className = "FinanceRound";
+  newFinanceRound.innerHTML = `
+    <br />
+    <p class="Financials_title">Round ${roundCount}</p>
+    <article class="flex_left_space">
+      <form>
+        <label for="announcedDate" class="profile_heading">Announced Date</label>
+        <input type="date" id="announcedDate" name="announcedDate" placeholder="YYYY-MM-DD" class="filters2" />
+        <br />
+        <label for="roundInfo" class="profile_heading">Round Info</label>
+        <input type="text" id="roundInfo" name="roundInfo" placeholder="Seed Round, Series A, etc." class="filters2" />
+        <br />
+        <label for="amountRaised" class="profile_heading">Amount Raised</label>
+        <input type="number" id="amountRaised" name="amountRaised" placeholder="Amount raised in USD" class="filters2" />
+        <br />
+        <label for="leadInvestors" class="profile_heading">Lead Investors</label>
+        <input type="text" id="leadInvestors" name="leadInvestors" placeholder="Lead investors' names" class="filters2" />
+        <br />
+      </form>
+      <img src="./icon/Trash.png" class="DeleteRow" alt="Delete Round" />
+    </article>
+  `;
+  document.getElementById("sectionsContainer").appendChild(newFinanceRound);
 });
 
-function toggleBorder(checkbox) {
-  var parentArticle = checkbox.closest(".flex_withBox");
-  if (checkbox.checked) {
-    parentArticle.classList.add("selected");
-  } else {
-    parentArticle.classList.remove("selected");
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("DeleteRow")) {
+    const roundInfo = e.target.closest(".FinanceRound");
+    roundInfo.remove();
+    roundCount--;
+    renumberRounds();
   }
+});
+
+//add product
+let productCount = 1;
+
+function renumberProducts() {
+  const productTitles = document.querySelectorAll(".Products_title");
+  productTitles.forEach((title, index) => {
+    title.textContent = `Product ${index + 1}`;
+  });
 }
+
+document.getElementById("AddProductBtn").addEventListener("click", function () {
+  productCount++;
+
+  const newProductRound = document.createElement("div");
+  newProductRound.className = "product_round";
+  newProductRound.innerHTML = `
+      <br />
+      <p class="Products_title">Product ${productCount}</p>
+      <article class="flex_left_space">
+        <form>
+          <input type="file" id="fileInput1" name="filename1" /> <input type="file" id="fileInput2" name="filename2" />
+          <br />
+          <label for="product" class="profile_heading">Product</label>
+          <input type="text" id="tag" name="tag" placeholder="Product Name" class="filters2" /><br />
+          <label for="product" class="profile_heading">Description</label>
+          <input type="text" id="tag" name="tag" placeholder="Describe the product" class="filters2" /><br />
+        </form>
+        <img src="./icon/Trash.png" class="DeleteRow" alt="Delete Product" />
+      </article>
+    `;
+
+  document.getElementById("productsContainer").appendChild(newProductRound);
+
+  renumberProducts(); // Update product numbers after adding a new product
+});
+
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("DeleteRow")) {
+    const productRound = e.target.closest(".product_round");
+    productRound.remove();
+    productCount--;
+    renumberProducts(); // Update product numbers after deleting a product
+  }
+});
 
 //add member
 
@@ -208,4 +224,14 @@ document.addEventListener("DOMContentLoaded", function () {
 function myFunction() {
   var contact_card_viewmore = document.getElementById("myPopup");
   contact_card_viewmore.classList.toggle("show");
+}
+
+//show Password
+function mouseoverPass() {
+  let obj = document.getElementById("pwordInput");
+  obj.type = "text";
+}
+function mouseoutPass() {
+  let obj = document.getElementById("pwordInput");
+  obj.type = "password";
 }

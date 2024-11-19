@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
     <title>Startline</title>
+    <meta name="author" content="Jeffrey" />
+    <meta name="refresh" content="60" />
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -22,8 +29,16 @@
             </div>
           </article>
         </div>
-
         <div class="nav">
+          <article class="dropdown_language">
+            <img src="./Photos/language.png" class="nav_language" />
+            <div class="dropdown-content_language">
+              <a href="index.html">English</a><br />
+              <a href="">Chinese</a><br />
+              <a href="">한국어</a><br />
+              <a href="">Japanese</a>
+            </div>
+          </article>
           <a href="loginStartup.html" class="nav_login">Login</a>
           <a href="join.html" class="nav_join">Join</a>
         </div>
@@ -40,53 +55,54 @@
           <li>
             <span class="caret">Can I change my plan later?</span>
             <ul class="nested">
-              <li>WaterSenchaSenchaSenchaSenchaSenchaSencha</li>
+              <li>Of course! You can change your plan by going to Settings > Plan Settings.</li>
             </ul>
           </li>
         </ul>
         <ul id="myUL">
-          <span class="caret">How do I cancel if I'm not super impressed?</span>
-          <ul class="nested">
-            <li>TeaSenchaSenchaSenchaSenchaSenchaSenchaSenchaSencha</li>
-          </ul>
-        </ul>
-        <ul id="myUL">
           <span class="caret">Not all of my questions have been answered. Who do I reach out to?</span>
           <ul class="nested">
-            <li>SenchaSenchaSenchaSenchaSenchaSenchaSenchaSenchaSencha</li>
+            <li>Checked out our <a href="support.html">support page </a>or <a href="contactus.html">contact us!</a></li>
           </ul>
         </ul>
       </article>
       <article>
         <article class="join1_prices">
-          <label for="myCheck" class="join1_prices_1"
-            ><p class="join1_prices_11"><input type="checkbox" id="myCheck" onclick="myFunction()" /> I am a Startup</p></label
-          >
-          <p class="join1_prices_13">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <label for="startup" class="join1_prices_1">
+            <p class="join1_prices_11"><input type="checkbox" id="startup" onclick="updateCheck('startup')" /> I am a Startup</p>
+          </label>
+          <p class="join1_prices_13">Showcase your product to corporate users with a personalized profile page, all for free!</p>
         </article>
         <article class="join1_prices">
-          <label for="myCheck" class="join1_prices_1"
-            ><p class="join1_prices_11"><input type="checkbox" id="myCheck" onclick="myFunction()" /> Free</p>
-            <p class="join1_prices_12">$0 /year</p></label
-          >
-          <p class="join1_prices_13">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <label for="free" class="join1_prices_1">
+            <p class="join1_prices_11"><input type="checkbox" id="free" onclick="updateCheck('free')" /> Free</p>
+            <p class="join1_prices_12">$0 /year</p>
+          </label>
+          <p class="join1_prices_13">
+            Access 3 company profiles for essential information such as website links and employee numbers at no cost.
+          </p>
         </article>
         <article class="join1_prices">
-          <label for="myCheck" class="join1_prices_1"
-            ><p class="join1_prices_11"><input type="checkbox" id="myCheck" onclick="myFunction()" /> Business</p>
-            <p class="join1_prices_12">$49 /month</p></label
-          >
-          <p class="join1_prices_13">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <label for="business" class="join1_prices_1">
+            <p class="join1_prices_11"><input type="checkbox" id="business" onclick="updateCheck('business')" /> Business</p>
+            <p class="join1_prices_12">$49 /month</p>
+          </label>
+          <p class="join1_prices_13">
+            Dive deeper with 20 company profiles featuring basic, product, finance, and contact information for comprehensive insights.
+          </p>
         </article>
         <article class="join1_prices">
-          <label for="myCheck" class="join1_prices_1"
-            ><p class="join1_prices_11"><input type="checkbox" id="myCheck" onclick="myFunction()" /> Corporate</p>
-            <p class="join1_prices_12">$199 /month</p></label
-          >
-          <p class="join1_prices_13">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <label for="corporate" class="join1_prices_1">
+            <p class="join1_prices_11"><input type="checkbox" id="corporate" onclick="updateCheck('corporate')" /> Corporate</p>
+            <p class="join1_prices_12">$199 /month</p>
+          </label>
+          <p class="join1_prices_13">
+            Unlock unlimited company profile views with detailed basic, product, finance, and contact information for extensive exploration.
+          </p>
         </article>
         <p id="pay" style="display: none">Payment Confirmed</p>
-        <article class="pay_btn" id="pay">Pay</article>
+        <br />
+        <article class="pay_btn" id="payButton" onclick="pay()">Pay</article>
       </article>
     </div>
     <div class="footer2">

@@ -83,3 +83,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
   cloneImages.forEach((clone) => scrollElement.appendChild(clone));
 });
+
+//Only allow selection of 1 plan
+function updateCheck(checkboxId) {
+  var checkboxes = ["startup", "free", "business", "corporate"];
+
+  checkboxes.forEach(function (item) {
+    if (item !== checkboxId) {
+      document.getElementById(item).checked = false;
+    }
+  });
+}
+
+function pay() {
+  if (
+    document.getElementById("startup").checked ||
+    document.getElementById("free").checked ||
+    document.getElementById("business").checked ||
+    document.getElementById("corporate").checked
+  ) {
+    document.getElementById("pay").style.display = "block";
+  } else {
+    alert("Please select a membership option.");
+  }
+}
+
+//show Password
+function mouseoverPass() {
+  let obj = document.getElementById("pwordInput");
+  obj.type = "text";
+}
+function mouseoutPass() {
+  let obj = document.getElementById("pwordInput");
+  obj.type = "password";
+}
+
+//Pricing maintain leveling of bubbles
+document.addEventListener("DOMContentLoaded", function () {
+  const pricing2_3Elements = document.querySelectorAll(".pricing2_3");
+
+  pricing2_3Elements.forEach((element) => {
+    if (element.innerHTML.trim() === "") {
+      element.style.visibility = "hidden";
+    }
+  });
+});

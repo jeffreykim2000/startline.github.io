@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
     <title>Startline</title>
+    <meta name="author" content="Jeffrey" />
+    <meta name="refresh" content="60" />
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -23,6 +30,15 @@
           </article>
         </div>
         <div class="nav">
+          <article class="dropdown_language">
+            <img src="./Photos/language.png" class="nav_language" />
+            <div class="dropdown-content_language">
+              <a href="index.html">English</a><br />
+              <a href="">Chinese</a><br />
+              <a href="">한국어</a><br />
+              <a href="">Japanese</a>
+            </div>
+          </article>
           <a href="loginStartup.html" class="nav_login">Login</a>
           <a href="join.html" class="nav_join">Join</a>
         </div>
@@ -39,17 +55,21 @@
         <br />
 
         <div class="container">
-          <label for="uname" class="login_label">Username</label> <br />
+          <label for="uname" class="login_label">Username*</label> <br />
           <input type="text" placeholder="This is how you'll appear to others" name="uname" class="longin_label_content" required />
           <br />
-          <label for="psw" class="login_label">Password</label> <br />
-          <input type="password" placeholder="At least 8 characters" name="psw" class="longin_label_content" required />
-          <label for="psw" class="login_label">Name</label> <br />
+          <label for="psw" class="login_label">Password*</label> <br />
+          <div class="password-input">
+            <input type="password" id="pwordInput" placeholder="At least 8 characters" name="psw" class="longin_label_content" required />
+            <img src="./Photos/password.png" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" class="nav_language" />
+          </div>
+          <br />
+          <label for="name" class="login_label">Name*</label> <br />
           <input type="text" placeholder="First Name" name="fname" class="short_label_content" required />
           <input type="text" placeholder="Last Name" name="lname" class="short_label_content" required />
           <br />
-          <label for="psw" class="login_label">Work Email</label> <br />
-          <input type="password" placeholder="name@company.com" name="psw" class="longin_label_content" required />
+          <label for="email" class="login_label">Work Email*</label> <br />
+          <input type="text" placeholder="name@company.com" name="email" class="longin_label_content" required />
         </div>
         <div class="container">
           <label> <input type="checkbox" checked="checked" name="remember" class="checkbox" /> Remember me </label>
@@ -110,4 +130,5 @@
   <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
   <script src="smoothScroll.js"></script>
   <script src="lightbox-plus-jquery.js"></script>
+  <script src="features.js"></script>
 </html>
