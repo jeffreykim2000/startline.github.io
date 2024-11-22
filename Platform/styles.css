@@ -90,7 +90,7 @@ body {
 
 .menu_middle {
   position: relative;
-  top: 33%;
+  top: 31%;
   left: 0;
   width: fit-content;
   text-align: left;
@@ -139,7 +139,7 @@ body {
   opacity: 0px;
   background: #2962ff1a;
   color: #2962ff;
-  margin: 0px 0px 0px 40px;
+  margin: 0px 0px 5px 40px;
   display: flex;
   align-items: center;
   line-height: 24px;
@@ -168,7 +168,7 @@ body {
   letter-spacing: 0.10000000149011612px;
   text-align: left;
   color: #64758f;
-  margin: 0px 0px 0px 40px;
+  margin: 0px 0px 5px 40px;
   display: flex;
   align-items: center;
 }
@@ -324,11 +324,9 @@ body {
   text-decoration: none;
 }
 
-.weeklyStats_button:hover {
-  color: #cfe0ff; /* Light blue text color on hover */
-}
-
-.card_bottomright:hover {
+.weeklyStats_button:hover,
+.card_bottomright:hover,
+.card_bottomright_AIRecommend:hover {
   color: #cfe0ff; /* Light blue text color on hover */
 }
 
@@ -768,6 +766,44 @@ body {
   border-radius: 10px;
 }
 
+.filters4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  text-align: left;
+  color: #64758f80;
+  border: 1px solid var(--Lines, #eaf0ff);
+  box-shadow: 0px 4px 20px -4px #2f56a514;
+  background: #ffffff;
+  width: 60px;
+  height: max-content;
+  padding: 8px 8px 8px 8px;
+  gap: 15px;
+  border-radius: 10px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  margin: none;
+}
+
+.filters5 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  text-align: left;
+  color: #64758f80;
+  border: 1px solid var(--Lines, #eaf0ff);
+  box-shadow: 0px 4px 20px -4px #2f56a514;
+  background: #ffffff;
+  width: 140px;
+  height: max-content;
+  padding: 8px 10px 8px 8px;
+  gap: 15px;
+  border-radius: 10px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  margin: 5px;
+}
+
 .filters_members {
   text-align: left;
   border: 1px solid var(--Lines, #eaf0ff);
@@ -1053,7 +1089,7 @@ body {
 }
 
 .contact_card_heading {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 23px;
   text-align: left;
@@ -1061,7 +1097,7 @@ body {
 }
 
 .contact_card_content {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 23px;
   text-align: left;
@@ -1106,7 +1142,7 @@ body {
   background: #f5f5f5;
   margin-right: 5px;
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   line-height: 13px;
 }
@@ -1578,8 +1614,9 @@ tr {
   text-align: left;
   color: #64758f;
   width: fit-content;
-  max-width: 85%;
+  max-width: 87vw;
   padding-left: 0px;
+  letter-spacing: 0.3px;
 }
 
 .CompanyContent_content1 {
@@ -2077,24 +2114,6 @@ opacity: 0px;
   padding: none;
   margin: none;
 }
-
-/* .filters2 {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20.83px;
-  text-align: left;
-  color: #64758f80;
-  border: 1px solid var(--Lines, #eaf0ff);
-  box-shadow: 0px 4px 20px -4px #2f56a514;
-  background: #ffffff;
-  width: 250px;
-  height: max-content;
-  padding: 8px 8px 8px 8px;
-  gap: 15px;
-  border-radius: 10px;
-  border: 1px 0px 0px 0px;
-  margin: 5px;
-} */
 
 .password-input {
   position: relative;

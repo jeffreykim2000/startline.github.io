@@ -55,31 +55,31 @@
         <br />
 
         <div class="container">
-          <label for="uname" class="login_label">Username*</label> <br />
-          <input type="text" placeholder="This is how you'll appear to others" name="uname" class="longin_label_content" required />
-          <br />
-          <label for="psw" class="login_label">Password*</label> <br />
-          <div class="password-input">
-            <input type="password" id="pwordInput" placeholder="At least 8 characters" name="psw" class="longin_label_content" required />
-            <img src="./Photos/password.png" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" class="nav_language" />
-          </div>
-          <br />
-          <label for="name" class="login_label">Name*</label> <br />
-          <input type="text" placeholder="First Name" name="fname" class="short_label_content" required />
-          <input type="text" placeholder="Last Name" name="lname" class="short_label_content" required />
-          <br />
-          <label for="email" class="login_label">Work Email*</label> <br />
-          <input type="text" placeholder="name@company.com" name="email" class="longin_label_content" required />
+          <form action="join1.html">
+            <label for="uname" class="login_label">Username*</label> <br />
+            <input type="text" placeholder="This is how you'll appear to others" name="uname" class="longin_label_content" required />
+            <br />
+            <label for="psw" class="login_label">Password*</label> <br />
+            <div class="password-input">
+              <input type="password" id="pwordInput" placeholder="At least 8 characters" name="psw" class="longin_label_content" required />
+              <img src="./Photos/password.png" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" class="nav_language" />
+            </div>
+            <br />
+            <label for="name" class="login_label">Name*</label> <br />
+            <input type="text" placeholder="First Name" name="fname" class="short_label_content" required />
+            <input type="text" placeholder="Last Name" name="lname" class="short_label_content" required />
+            <br />
+            <label for="email" class="login_label">Work Email*</label> <br />
+            <input type="text" placeholder="name@company.com" name="email" class="longin_label_content" required />
+            <label> <input type="checkbox" checked="checked" name="remember" class="checkbox" /> Remember me </label>
+            <span class="psw"><a href="join.html">Forgot password?</a></span>
+            <p class="signupFooter">
+              By signing up, you are agreeing to our <span style="color: black"> Terms and Conditions</span> and
+              <span style="color: black"> Privacy Policy.</span>
+            </p>
+            <button type="submit" class="login_btn">Sign Up</button>
+          </form>
         </div>
-        <div class="container">
-          <label> <input type="checkbox" checked="checked" name="remember" class="checkbox" /> Remember me </label>
-          <span class="psw"><a href="join.html">Forgot password?</a></span>
-        </div>
-        <p class="signupFooter">
-          By signing up, you are agreeing to our <span style="color: black"> Terms and Conditions</span> and
-          <span style="color: black"> Privacy Policy.</span>
-        </p>
-        <button type="submit" class="login_btn"><a href="join1.html">Sign Up</a></button>
         <p class="join_main3">
           Already have an account?<span class="signup"><a href="loginCorporate.html"> Sign in</a></span>
         </p>

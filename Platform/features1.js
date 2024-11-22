@@ -235,3 +235,15 @@ function mouseoutPass() {
   let obj = document.getElementById("pwordInput");
   obj.type = "password";
 }
+
+//dropdown email
+document.getElementById("email-domain").addEventListener("change", function () {
+  var emailOtherInput = document.getElementById("email-other");
+  if (this.value === "other") {
+    emailOtherInput.style.display = "inline";
+    emailOtherInput.setAttribute("required", "required");
+  } else {
+    emailOtherInput.style.display = "none";
+    emailOtherInput.removeAttribute("required");
+  }
+});

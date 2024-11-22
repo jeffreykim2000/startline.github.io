@@ -58,23 +58,24 @@
         <p class="join_main2">To connecting you with solutions</p>
         <br />
         <div class="container">
-          <label for="uname" class="login_label">Work Email</label> <br />
+          <form action="./Platform/GetStarted.html">
+            <label for="uname" class="login_label">Work Email</label> <br />
 
-          <input type="text" placeholder="name@company.com" name="uname" class="longin_label_content" required />
-          <br />
+            <input type="text" placeholder="name@company.com" name="uname" class="longin_label_content" required />
+            <br />
 
-          <label for="psw" class="login_label">Password</label> <br />
+            <label for="psw" class="login_label">Password</label> <br />
 
-          <div class="password-input">
-            <input type="password" id="pwordInput" placeholder="At least 8 characters" name="psw" class="longin_label_content" required />
-            <img src="./Photos/password.png" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" class="nav_language" />
-          </div>
+            <div class="password-input">
+              <input type="password" id="pwordInput" placeholder="At least 8 characters" name="psw" class="longin_label_content" required />
+              <img src="./Photos/password.png" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" class="nav_language" />
+            </div>
+            <br />
+            <label> <input type="checkbox" checked="checked" name="remember" class="checkbox" /> Remember me </label>
+            <span class="psw">Forgot <a href="join.html" class="psw">password?</a></span>
+            <button type="submit" class="login_btn">Sign In</button>
+          </form>
         </div>
-        <div class="container">
-          <label> <input type="checkbox" checked="checked" name="remember" class="checkbox" /> Remember me </label>
-          <span class="psw">Forgot <a href="join.html" class="psw">password?</a></span>
-        </div>
-        <button type="submit" class="login_btn"><a href="./Platform/GetStarted.html">Sign In</a></button>
         <p class="join_main3">
           Don't have an account?<span class="signup"><a href="join.html"> Sign up</a></span>
         </p>

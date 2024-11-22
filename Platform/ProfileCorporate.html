@@ -80,19 +80,34 @@
         <br />
         <p class="profile_title">Basic Information</p>
         <form>
-          <!-- <label for="reason">asdf</label> -->
           <br />
-          <label for="email" class="profile_heading1">Primary Contact Name*</label>
-          <input type="text" id="email" name="email" placeholder="e.g. John Doe" class="filters2" required />
+          <label for="email" class="profile_heading1">Contact Name*</label>
+          <input type="text" id="email" name="email" placeholder="Input your primary contact name" class="filters2" required />
           <br />
-          <label for="phone" class="profile_heading1">Primary Contact Email*</label>
-          <input type="text" id="phone" name="phone" placeholder="name@company.com" class="filters2" required />
+          <label for="email" class="profile_heading">Contact Email*</label>
+          <input type="email" id="email-input" name="email-input" placeholder="Input your primary contact email" class="filters5" />
+          @
+          <input type="text" id="email-other" name="email-other" placeholder="Domain" class="filters4" style="display: none" required />
+          <select id="email-domain" name="email-domain" class="filters" required>
+            <option value="">Select an email option</option>
+            <option value="gmail.com">gmail.com</option>
+            <option value="outlook.com">outlook.com</option>
+            <option value="yahoo.com">yahoo.com</option>
+            <option value="other">Other</option>
+          </select>
           <br />
-          <label for="website" class="profile_heading1">Primary Contact No.*</label>
-          <input type="text" id="website" name="website" placeholder="www.startline.vip" class="filters2" required />
+          <label for="website" class="profile_heading1">Contact No.*</label>
+          <input type="text" id="website" name="website" placeholder="Input your primary contact no." class="filters2" required />
           <br />
           <label for="employee" class="profile_heading1">Headquarter Location*</label>
-          <input type="number" id="employee" name="employee" placeholder="www.startline.vip" class="filters2" required />
+          <input
+            type="number"
+            id="employee"
+            name="employee"
+            placeholder="Input the location of your headquarter"
+            class="filters2"
+            required
+          />
           <br />
           <div>
             <label for="industry" class="profile_heading1">Industry*</label>

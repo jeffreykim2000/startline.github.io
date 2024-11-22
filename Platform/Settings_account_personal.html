@@ -100,22 +100,31 @@
         <form>
           <br />
           <label for="email" class="profile_heading">Name*</label>
-          <input type="text" id="email" name="email" placeholder="Bob Wang" class="filters2" required />
+          <input type="text" id="email" name="email" placeholder="Input your full name" class="filters2" required />
           <br />
           <label for="phone" class="profile_heading">Department*</label>
-          <input type="text" id="phone" name="phone" placeholder="Business Development" class="filters2" required />
+          <input type="text" id="phone" name="phone" placeholder="Input the department you are from" class="filters2" required />
           <br />
           <label for="website" class="profile_heading">Role*</label>
-          <input type="text" id="website" name="website" placeholder="Manger" class="filters2" required />
+          <input type="text" id="website" name="website" placeholder="Input your role at your company" class="filters2" required />
           <br />
-          <label for="employee" class="profile_heading">Work Email*</label>
-          <input type="text" id="employee" name="employee" placeholder="name@company.com" class="filters2" required />
+          <label for="email" class="profile_heading">Work Email</label>
+          <input type="email" id="email-input" name="email-input" placeholder="Input your primary contact email" class="filters5" />
+          @
+          <input type="text" id="email-other" name="email-other" placeholder="Domain" class="filters4" style="display: none" required />
+          <select id="email-domain" name="email-domain" class="filters" required>
+            <option value="">Select an email option</option>
+            <option value="gmail.com">gmail.com</option>
+            <option value="outlook.com">outlook.com</option>
+            <option value="yahoo.com">yahoo.com</option>
+            <option value="other">Other</option>
+          </select>
           <br />
           <label for="foundingyr" class="profile_heading">Work No.*</label>
-          <input type="text" id="foundingyr" name="foundingyr" placeholder="xxxx-xxxx" class="filters2" required />
+          <input type="text" id="foundingyr" name="foundingyr" placeholder="Input your contact number" class="filters2" required />
           <br />
           <label for="linkedin" class="profile_heading">Linkedin URL</label>
-          <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/company/acel-lab-limited" class="filters2" />
+          <input type="url" id="linkedin" name="linkedin" placeholder="Input your Linkedin profile URL" class="filters2" />
 
           <br />
           <label for="uname" class="profile_heading">Username*</label>
@@ -123,7 +132,7 @@
           <br />
           <label for="pword" class="profile_heading">Password*</label>
           <span class="password-input">
-            <input type="password" id="pwordInput" placeholder="At least 8 characters" name="psw" class="filters2" required />
+            <input type="password" id="pwordInput" placeholder="Input your password" name="psw" class="filters2" required />
             <img src="./icon/Password.png" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" class="nav_language" />
           </span>
         </form>
