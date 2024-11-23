@@ -128,3 +128,33 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+//dropdown email
+document.getElementById("email-domain").addEventListener("change", function () {
+  var emailOtherInput = document.getElementById("email-other");
+  if (this.value === "other") {
+    emailOtherInput.style.display = "inline";
+    emailOtherInput.setAttribute("required", "required");
+  } else {
+    emailOtherInput.style.display = "none";
+    emailOtherInput.removeAttribute("required");
+  }
+});
+
+//dropdown email
+function setupEmailChangeHandler(domainId, otherId) {
+  document.getElementById(domainId).addEventListener("change", function () {
+    var emailOtherInput = document.getElementById(otherId);
+    if (this.value === "other") {
+      emailOtherInput.style.display = "inline";
+      emailOtherInput.setAttribute("required", "required");
+    } else {
+      emailOtherInput.style.display = "none";
+      emailOtherInput.removeAttribute("required");
+    }
+  });
+}
+
+// Call the function for each pair of elements
+setupEmailChangeHandler("email-domain1", "email-other1");
+setupEmailChangeHandler("email-domain2", "email-other2");

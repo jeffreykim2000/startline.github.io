@@ -81,23 +81,14 @@
         <p class="profile_title">Basic Information</p>
         <form>
           <br />
-          <label for="email" class="profile_heading1">Contact Name*</label>
+          <label for="name" class="profile_heading1">Contact Name*</label>
           <input type="text" id="email" name="email" placeholder="Input your primary contact name" class="filters2" required />
           <br />
-          <label for="email" class="profile_heading">Contact Email*</label>
-          <input type="email" id="email-input" name="email-input" placeholder="Input your primary contact email" class="filters5" />
-          @
-          <input type="text" id="email-other" name="email-other" placeholder="Domain" class="filters4" style="display: none" required />
-          <select id="email-domain" name="email-domain" class="filters" required>
-            <option value="">Select an email option</option>
-            <option value="gmail.com">gmail.com</option>
-            <option value="outlook.com">outlook.com</option>
-            <option value="yahoo.com">yahoo.com</option>
-            <option value="other">Other</option>
-          </select>
+          <label for="email" class="profile_heading1">Contact Email*</label>
+          <input type="email" name="email-input" placeholder="Input your email" class="filters2" required />
           <br />
-          <label for="website" class="profile_heading1">Contact No.*</label>
-          <input type="text" id="website" name="website" placeholder="Input your primary contact no." class="filters2" required />
+          <label for="phonenumber" class="profile_heading1">Contact No.*</label>
+          <input type="number" id="website" name="website" placeholder="Input your primary contact no." class="filters2" required />
           <br />
           <label for="employee" class="profile_heading1">Headquarter Location*</label>
           <input
@@ -111,7 +102,7 @@
           <br />
           <div>
             <label for="industry" class="profile_heading1">Industry*</label>
-            <select id="country" name="country" class="filters2" required>
+            <select id="industry" name="country" class="filters2" required>
               <option value="australia">Australia</option>
               <option value="canada">Canada</option>
               <option value="usa">USA</option>
@@ -320,11 +311,9 @@
               <option value="Zimbabwe">Zimbabwe</option>
             </select>
           </div>
-        </form>
-        <br />
-        <br />
-        <p class="profile_title">AI Fine-Tuning</p>
-        <form>
+          <br />
+          <br />
+          <p class="profile_title">AI Fine-Tuning</p>
           <!-- <label for="reason">asdf</label> -->
           <br />
           <label for="survey" class="profile_heading_survey">What is the biggest challenge your company faces today?*</label><br />
@@ -339,9 +328,10 @@
           <br />
           <label for="survey" class="profile_heading_survey">What type of category of technology are you looking for?*</label> <br />
           <input type="message" id="survey" name="survey" placeholder="Data engineering" class="filters2" required />
+          <br />
+          <br />
+          <button type="submit" class="button">Activate</button>
         </form>
-        <br />
-        <p class="button">Activate</p>
         <br />
         <br />
         <br />
@@ -355,6 +345,5 @@
   </body>
   <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
   <script src="smoothScroll.js"></script>
-  <script src="lightbox-plus-jquery.js"></script>
   <script src="features1.js"></script>
 </html>

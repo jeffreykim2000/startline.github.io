@@ -92,7 +92,7 @@ document.addEventListener("click", function (e) {
 //add member
 
 let memberCount = 1;
-
+let emailCount = 1;
 function renumberMembers() {
   const memberTitles = document.querySelectorAll(".Member_title");
   memberTitles.forEach((title, index) => {
@@ -104,6 +104,7 @@ document.getElementById("addTeamBtn").addEventListener("click", function () {
   memberCount++;
   const newTeamMember = document.createElement("div");
   newTeamMember.className = "TeamInfo";
+  emailCount++;
   newTeamMember.innerHTML = `
                 <br />
                 <p class="Member_title">Member ${memberCount}</p>
@@ -118,8 +119,8 @@ document.getElementById("addTeamBtn").addEventListener("click", function () {
                     <label for="employee" class="profile_heading">Role</label>
                     <input type="text" id="employee" name="employee" placeholder="Manager" class="filters2" />
                     <br />
-                    <label for="website" class="profile_heading">Work Email</label>
-                    <input type="url" id="website" name="website" placeholder="name@company.com" class="filters2" />
+                    <label for="email" class="profile_heading">Contact Email*</label>
+                <input type="email" name="email-input" placeholder="Input your email" class="filters2" />
                     <br />
                     <label for="phone" class="profile_heading">Work Phone</label>
                     <input type="text" id="phone" name="phone" placeholder="xxxx-xxxx" class="filters2" />
@@ -236,14 +237,17 @@ function mouseoutPass() {
   obj.type = "password";
 }
 
-//dropdown email
-document.getElementById("email-domain").addEventListener("change", function () {
-  var emailOtherInput = document.getElementById("email-other");
-  if (this.value === "other") {
-    emailOtherInput.style.display = "inline";
-    emailOtherInput.setAttribute("required", "required");
-  } else {
-    emailOtherInput.style.display = "none";
-    emailOtherInput.removeAttribute("required");
+//adding tags
+const inputTag = document.getElementById("input-tag");
+const tagsList = document.getElementById("tags");
+let tagsCount = 0;
+
+inputTag.addEventListener("keyup", function (event) {
+  if (event.key === "Enter" && inputTag.value.trim() !== "" && tagsCount < 10) {
+    const tag = document.createElement("li");
+    tag.textContent = inputTag.value.trim();
+    tagsList.appendChild(tag);
+    inputTag.value = "";
+    tagsCount++;
   }
 });

@@ -13,12 +13,12 @@ body {
 }
 
 .logo {
-  width: 110px;
+  width: 100px;
   height: 30px;
   gap: 0px;
   opacity: 1;
   margin: none;
-  padding: 10px 20px 10px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 .logo_menu {
@@ -472,7 +472,7 @@ body {
 }
 
 .CustomerType_description {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 26.04px;
   text-align: left;
@@ -734,7 +734,7 @@ body {
 }
 
 .filters2 {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 20.83px;
   text-align: left;
@@ -874,7 +874,7 @@ body {
   min-width: 26%;
   max-width: 40%;
   height: 75%;
-  padding: 30px 0px 30px 30px;
+  padding: 20px;
   gap: 0px;
   border-radius: 30px;
   opacity: 1;
@@ -885,8 +885,8 @@ body {
 
 .card_AIRecommend {
   width: 85%;
-  height: 75%;
-  padding: 20px 0px 30px 20px;
+  height: 82%;
+  padding: 20px;
   gap: 0px;
   border-radius: 30px;
   opacity: 1;
@@ -929,12 +929,14 @@ body {
 
 .card_top {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .card_top_AIRecommend {
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .card_right {
@@ -951,8 +953,8 @@ body {
   line-height: 15px;
   text-align: right;
   color: #2962ff;
-  margin-top: 20px;
-  padding-left: 50%;
+  margin-top: 5px;
+  padding-left: 60%;
   width: fit-content;
 }
 
@@ -1009,6 +1011,7 @@ body {
   text-align: left;
   color: #000000;
   padding-right: 30px;
+  width: 100%;
 }
 
 .card_technology {
@@ -1113,6 +1116,7 @@ body {
 .card_flex {
   display: flex;
   justify-content: left;
+  flex-wrap: wrap;
 }
 
 .target {
@@ -1133,19 +1137,74 @@ body {
 }
 
 .target_AIRecommend {
-  width: fit-content;
-  height: fit-content;
-  padding: 5px 10px 5px 10px;
+  position: relative;
+  display: inline-block;
+  width: 10%;
+  height: 20px;
+  padding: 5px 10px;
   gap: 5px;
   border-radius: 13px;
-  opacity: 0px;
+  opacity: 1;
   background: #f5f5f5;
   margin-right: 5px;
   margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 10px;
   font-weight: 400;
-  line-height: 13px;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: width 0.3s;
 }
+
+.target_AIRecommend .target_AIRecommend_hover {
+  position: relative;
+  visibility: hidden;
+  width: auto;
+  min-width: 20%;
+  height: 20px;
+  background-color: transparent;
+  color: transparent;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.target_AIRecommend .target_AIRecommend_hover::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: none;
+  border-color: transparent transparent transparent transparent;
+  background: none;
+}
+
+.target_AIRecommend:hover {
+  width: auto;
+  text-overflow: clip;
+  white-space: normal;
+}
+
+.target_AIRecommend:hover .target_AIRecommend_hover {
+  visibility: visible;
+  opacity: 1;
+}
+
 .card a {
   text-decoration: none;
 }
@@ -1667,7 +1726,7 @@ tr {
   box-shadow: 0px 1px 2px 0px #10182808;
   width: fit-content;
   height: max-content;
-  padding: 14px;
+  padding: 4px 14px 7px 14px;
   gap: 10px;
   border-radius: 12px;
   border: 1px 0px 0px 0px;
@@ -1678,17 +1737,17 @@ tr {
 .Ad_line1 {
   font-size: 16px;
   font-weight: 700;
-  line-height: 20.83px;
-  letter-spacing: 0.1px;
+  line-height: 19px;
+  letter-spacing: 0.08px;
   text-align: left;
   color: #171b23;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .Ad_line2 {
   font-size: 14px;
   font-weight: 400;
-  line-height: 18.23px;
+  line-height: 18px;
   letter-spacing: 0.1px;
   text-align: left;
   color: #64758f;
@@ -1698,7 +1757,7 @@ tr {
 
 .Ad_button {
   width: 100%;
-  height: max-content;
+  height: fit-content;
   padding: auto;
   line-height: 30px;
   gap: 0px;
@@ -2017,6 +2076,7 @@ opacity: 0px;
   outline: none;
   padding: 5px;
   font-size: 14px;
+  width: 100px; /* Adjust width as needed */
 }
 
 .tags-input input[type="text"]:focus {

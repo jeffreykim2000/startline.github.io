@@ -99,29 +99,20 @@
         </article>
         <form>
           <br />
-          <label for="email" class="profile_heading">Name*</label>
+          <label for="name" class="profile_heading">Name*</label>
           <input type="text" id="email" name="email" placeholder="Input your full name" class="filters2" required />
           <br />
-          <label for="phone" class="profile_heading">Department*</label>
+          <label for="department" class="profile_heading">Department*</label>
           <input type="text" id="phone" name="phone" placeholder="Input the department you are from" class="filters2" required />
           <br />
-          <label for="website" class="profile_heading">Role*</label>
+          <label for="role" class="profile_heading">Role*</label>
           <input type="text" id="website" name="website" placeholder="Input your role at your company" class="filters2" required />
           <br />
           <label for="email" class="profile_heading">Work Email</label>
-          <input type="email" id="email-input" name="email-input" placeholder="Input your primary contact email" class="filters5" />
-          @
-          <input type="text" id="email-other" name="email-other" placeholder="Domain" class="filters4" style="display: none" required />
-          <select id="email-domain" name="email-domain" class="filters" required>
-            <option value="">Select an email option</option>
-            <option value="gmail.com">gmail.com</option>
-            <option value="outlook.com">outlook.com</option>
-            <option value="yahoo.com">yahoo.com</option>
-            <option value="other">Other</option>
-          </select>
+          <input type="email" name="email-input" placeholder="Input your email" class="filters2" required />
           <br />
           <label for="foundingyr" class="profile_heading">Work No.*</label>
-          <input type="text" id="foundingyr" name="foundingyr" placeholder="Input your contact number" class="filters2" required />
+          <input type="number." id="foundingyr" name="foundingyr" placeholder="Input your contact number" class="filters2" required />
           <br />
           <label for="linkedin" class="profile_heading">Linkedin URL</label>
           <input type="url" id="linkedin" name="linkedin" placeholder="Input your Linkedin profile URL" class="filters2" />
@@ -135,9 +126,10 @@
             <input type="password" id="pwordInput" placeholder="Input your password" name="psw" class="filters2" required />
             <img src="./icon/Password.png" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" class="nav_language" />
           </span>
+          <br />
+          <br />
+          <button type="submit" class="button">Save</button>
         </form>
-        <br />
-        <p class="button">Save</p>
         <br />
         <br />
         <br />

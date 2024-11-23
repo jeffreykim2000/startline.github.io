@@ -1327,6 +1327,42 @@ body {
   outline: none;
 }
 
+.short_label_contents {
+  width: 33%;
+  height: Hug (41px) px;
+  padding: 8px 0px 8px 10px;
+  gap: 0px;
+  border-radius: 10px;
+  border: 1px 0px 0px 0px;
+  opacity: 1;
+  border: 1px solid #d4e0ff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  text-align: left;
+  color: #64758f80;
+  margin-right: 5px;
+  outline: none;
+}
+
+.short_label_contentss {
+  width: 16%;
+  height: Hug (41px) px;
+  padding: 8px 0px 8px 10px;
+  gap: 0px;
+  border-radius: 10px;
+  border: 1px 0px 0px 0px;
+  opacity: 1;
+  border: 1px solid #d4e0ff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  text-align: left;
+  color: #64758f80;
+  margin-right: 5px;
+  outline: none;
+}
+
 .pricing2_1 {
   width: 300px;
   height: 38px;
@@ -2131,10 +2167,11 @@ span.signup a {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
-  text-align: left;
+  text-align: center;
   color: #64758f;
   padding-top: 25px;
   margin: auto;
+  width: 100%;
 }
 
 /* Change styles for span and cancel button on extra small screens */
