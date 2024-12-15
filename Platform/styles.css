@@ -1312,7 +1312,6 @@ body {
 }
 
 .team {
-  border-bottom: 1px solid var(--Lines, #eaf0ff);
   width: max-content;
   height: fit-content;
   padding: 20px 0px 0px 0px;
