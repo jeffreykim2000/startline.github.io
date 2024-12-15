@@ -1,0 +1,199 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Startline</title>
+    <meta name="author" content="Jeffrey" />
+    <meta name="refresh" content="60" />
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navigationbar">
+      <div class="navigationbox">
+        <div class="nav">
+          <a href="/"><img th:src="@{/images/logo/High Resolution Logo Files/Original on Transparent.png}" class="nav_logo" /></a>
+          <a href="/aboutus">Why Startline</a>
+          <a href="/price">Price</a>
+          <article class="dropdown">
+            <span>Resources</span>
+            <div class="dropdown-content">
+              <a href="/support">Support</a><br />
+              <a href="/contact">Contact</a>
+            </div>
+          </article>
+        </div>
+        <div class="nav">
+          <article class="dropdown_language">
+            <img th:src="@{/images/language.png}" class="nav_language" />
+            <div class="dropdown-content_language">
+              <a href="">English</a><br />
+              <a href="">Chinese</a><br />
+              <a href="">한국어</a><br />
+              <a href="">Japanese</a>
+            </div>
+          </article>
+          <a href="/login" class="nav_login">Login</a>
+          <a href="/register" class="nav_join">Join</a>
+        </div>
+      </div>
+    </div>
+    <div class="login1">
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <article class="join_title_btn">
+        <p id="startupBtn" class="join_btn1">
+          <a href="#" onclick="showForm('startupForm', 'startupBtn')">STARTUP</a>
+        </p>
+        <p id="corporateBtn" class="join_btn2">
+          <a href="#" onclick="showForm('corporateForm', 'corporateBtn')">CORPORATE</a>
+        </p>
+      </article>
+
+      <article class="join_main">
+        <div id="startupForm">
+          <p class="join_main1">Welcome Back</p>
+          <p class="join_main2">To championing your solutions</p>
+          <br />
+          <form th:action="@{/startup/login}" method="post">
+            <div class="container">
+              <label for="uname" class="login_label">Work Email</label> <br />
+              <input type="text" placeholder="name@company.com" name="username" class="longin_label_content" required />
+              <br />
+              <label for="psw" class="login_label">Password</label> <br />
+              <div class="password-input">
+                <input
+                  type="password"
+                  id="pwordInput"
+                  placeholder="At least 8 characters"
+                  name="password"
+                  class="longin_label_content"
+                  required
+                />
+                <img th:src="@{/images/password.png}" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" class="nav_language" />
+              </div>
+            </div>
+            <div class="container">
+              <label> <input type="checkbox" checked="checked" name="remember" class="checkbox" /> Remember me </label>
+              <span class="psw"><a href="/register">Forgot password?</a></span>
+            </div>
+            <button type="submit" class="login_btn">Sign In</button>
+            <p class="join_main3">
+              Don't have an account?<span class="signup"><a href="/register"> Sign up</a></span>
+            </p>
+          </form>
+        </div>
+
+        <div id="corporateForm" class="hidden">
+          <p class="join_main1">Welcome Back</p>
+          <p class="join_main2">To connecting you with solutions</p>
+          <br />
+          <form th:action="@{/corporate/login}" method="post">
+            <div class="container">
+              <label for="uname" class="login_label">Work Email</label> <br />
+              <input type="text" placeholder="name@company.com" name="username" class="longin_label_content" required />
+              <br />
+              <label for="psw" class="login_label">Password</label> <br />
+              <div class="password-input">
+                <input
+                  type="password"
+                  id="pwordInput"
+                  placeholder="At least 8 characters"
+                  name="password"
+                  class="longin_label_content"
+                  required
+                />
+                <img th:src="@{/images/password.png}" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" class="nav_language" />
+              </div>
+            </div>
+            <div class="container">
+              <label> <input type="checkbox" checked="checked" name="remember" class="checkbox" /> Remember me </label>
+              <span class="psw"><a href="/register" class="psw">Forgot password?</a></span>
+            </div>
+            <button type="submit" class="login_btn">Sign In</button>
+            <p class="join_main3">
+              Don't have an account?<span class="signup"><a href="/register"> Sign up</a></span>
+            </p>
+          </form>
+        </div>
+      </article>
+    </div>
+    <div class="footer2">
+      <div class="footer2_1">
+        <article class="footer2_11">
+          <p><img th:src="@{/images/logo/High Resolution Logo Files/Original on Transparent.png}" class="footer_logo" /></p>
+          <br />
+          <p class="footer_logo_content">
+            Helping companies like yours improve efficiency and boost productivity with a personalized platform to boost your satisfaction.
+          </p>
+        </article>
+        <article class="footer2_12">
+          <p class="footer_title">Product</p>
+          <br />
+          <p class="footer_content"><a href="/aboutus"> Why Startline</a></p>
+          <br />
+          <p class="footer_content"><a href="/price">What we offer</a></p>
+        </article>
+        <article class="footer2_12">
+          <p class="footer_title">Resources</p>
+          <br />
+          <p class="footer_content"><a href="/support">Support</a></p>
+          <br />
+          <p class="footer_content"><a href="/contact">Contact</a></p>
+        </article>
+        <article class="footer2_12">
+          <p class="footer_title">Company</p>
+          <br />
+          <p class="footer_content"><a href="/aboutus">About</a></p>
+          <br />
+          <p class="footer_content"><a href="/">Terms</a></p>
+          <br />
+          <p class="footer_content"><a href="/">Privacy</a></p>
+        </article>
+      </div>
+      <br />
+      <br />
+      <div class="footer2_2"></div>
+      <br />
+      <div class="footer2_3">
+        <p class="footer2_31">© 2024 Startline. Icons by Cristian MuÑoz, licensed under CC BY 4.0 All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  <script th:src="@{../js/smoothScroll.js}"></script>
+  <script th:src="@{../js/lightbox-plus-jquery.js}"></script>
+  <script th:src="@{../js/features.js}"></script>
+  <script>
+    function showForm(formId, btnId) {
+      document.getElementById("startupForm").classList.add("hidden");
+      document.getElementById("corporateForm").classList.add("hidden");
+      document.getElementById(formId).classList.remove("hidden");
+
+      document.getElementById("startupBtn").classList.remove("join_btn1");
+      document.getElementById("startupBtn").classList.add("join_btn2");
+      document.getElementById("corporateBtn").classList.remove("join_btn1");
+      document.getElementById("corporateBtn").classList.add("join_btn2");
+      document.getElementById(btnId).classList.remove("join_btn2");
+      document.getElementById(btnId).classList.add("join_btn1");
+    }
+
+    // Initialize with one form visible
+    window.onload = function () {
+      showForm("startupForm", "startupBtn");
+    };
+  </script>
+</html>
