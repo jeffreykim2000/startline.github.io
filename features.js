@@ -158,3 +158,79 @@ function setupEmailChangeHandler(domainId, otherId) {
 // Call the function for each pair of elements
 setupEmailChangeHandler("email-domain1", "email-other1");
 setupEmailChangeHandler("email-domain2", "email-other2");
+
+//Change content for startup and corporate setting up account
+function showContent(type) {
+  const startupContent = document.getElementById("startupContent");
+  const corporateContent = document.getElementById("corporateContent");
+
+  if (type === "startup") {
+    startupContent.style.display = "block";
+    corporateContent.style.display = "none";
+  } else if (type === "corporate") {
+    startupContent.style.display = "none";
+    corporateContent.style.display = "block";
+  }
+}
+
+//Change content for settings
+function showContent(type) {
+  const accountSetting = document.getElementById("accountSetting");
+  const teamSetting = document.getElementById("teamSetting");
+  const bookmarkSetting = document.getElementById("bookmarkSetting");
+  const planSetting = document.getElementById("planSetting");
+
+  if (type === "account") {
+    accountSetting.style.display = "block";
+    teamSetting.style.display = "none";
+    bookmarkSetting.style.display = "none";
+    planSetting.style.display = "none";
+  } else if (type === "team") {
+    accountSetting.style.display = "none";
+    teamSetting.style.display = "block";
+    bookmarkSetting.style.display = "none";
+    planSetting.style.display = "none";
+  } else if (type === "bookmark") {
+    accountSetting.style.display = "none";
+    teamSetting.style.display = "none";
+    bookmarkSetting.style.display = "block";
+    planSetting.style.display = "none";
+  } else if (type === "plan") {
+    accountSetting.style.display = "none";
+    teamSetting.style.display = "none";
+    bookmarkSetting.style.display = "none";
+    planSetting.style.display = "block";
+  }
+}
+
+//account Setting
+// function toggleSetting(setting) {
+//   var targetElement = document.querySelector(".support_navbar_subtitle_" + setting);
+
+//   if (targetElement) {
+//     targetElement.style.color = targetElement.style.color === "blue" ? "" : "blue"; // Toggle text color to blue
+//   }
+// }
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   function handleClick(setting) {
+//     showContent(setting); // Call showContent with the setting
+//     toggleSetting(setting); // Call toggleSetting with the setting
+//   }
+
+//   document.getElementById("account").addEventListener("click", function () {
+//     handleClick("account");
+//   });
+
+//   document.getElementById("team").addEventListener("click", function () {
+//     handleClick("team");
+//   });
+
+//   document.getElementById("bookmark").addEventListener("click", function () {
+//     handleClick("bookmark");
+//   });
+
+//   document.getElementById("plan").addEventListener("click", function () {
+//     handleClick("plan");
+//   });
+// });
