@@ -1047,7 +1047,9 @@ body {
   line-height: 30px;
   text-align: left;
   color: #000000;
-  white-space: nowrap; overflow: hidden;text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card_content_AIRecommend {
@@ -1057,7 +1059,9 @@ body {
   text-align: left;
   color: #000000;
   padding-right: 30px;
-  white-space: nowrap; overflow: hidden;text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card_technology {
@@ -1106,7 +1110,9 @@ body {
   text-align: left;
   color: #2962ff;
   margin-top: 8px;
-  white-space: nowrap; overflow: hidden;text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .contact_spaceright {
