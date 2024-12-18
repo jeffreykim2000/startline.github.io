@@ -1773,9 +1773,9 @@ body {
   line-height: 20.83px;
   text-align: left;
   color: #64758f;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-left: 18px;
-  width: 75%;
+  width: 100%;
 }
 
 .join1_main1 {
@@ -1816,7 +1816,7 @@ ul,
   -moz-user-select: none; /* Firefox 2+ */
   -ms-user-select: none; /* IE 10+ */
   user-select: none;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
   line-height: 40px;
   text-align: left;
@@ -2194,7 +2194,7 @@ span.signup a {
   border-right: 1px solid #d4e0ff;
   height: 100vh;
   width: 30vw;
-  padding: 100px 10px 0px 100px;
+  padding: 100px 10px 0px 50px;
   gap: 100px;
   border: 0px 1px 0px 0px;
   opacity: 0px;
@@ -2210,6 +2210,7 @@ span.signup a {
   height: max-content;
   margin-left: 50px;
   margin-bottom: 50px;
+  padding-right: 50px;
 }
 
 .support_navbar_MainTitle {
@@ -2405,7 +2406,7 @@ span.signup a {
 
 .flex_spacebetween {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   column-gap: 10px;
   margin-top: 20px;
 }
@@ -2486,7 +2487,7 @@ span.signup a {
 }
 
 .StartlineSupportHeader1 {
-  width: 401px;
+  width: 700px;
   height: 62px;
   gap: 0px;
   opacity: 0px;
@@ -2559,7 +2560,7 @@ span.signup a {
 }
 
 .StartlineSupportLinks1 {
-  width: 30%;
+  width: 70vw;
   height: max-content;
   padding: 10px 15px 10px 15px;
   gap: 0px;
@@ -2569,24 +2570,12 @@ span.signup a {
   border: 1px solid #d4e0ff;
   margin-bottom: 10px;
   text-align: center;
-}
-
-.StartlineSupportLinks1 button {
-  width: 70%;
-  height: 26px;
-  gap: 0px;
-  opacity: 0px;
+  background: none;
   font-size: 17px;
   font-weight: 400;
   line-height: 26.04px;
-  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #171b23;
-  text-decoration: none;
-  background: none;
-  border: none;
-  text-align: center;
 }
 
 .StartlineSupportLinks a {
@@ -2617,6 +2606,27 @@ span.signup a {
   text-decoration-skip-ink: none;
   color: #171b23;
   text-decoration: none;
+  background: none;
+  border: none;
+  text-align: center;
+}
+
+.StartlineSupportLinks1 button {
+  width: 70%;
+  height: max-content;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26.04px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #171b23;
+  text-decoration: none;
+  background: none;
+  border: none;
+  text-align: center;
 }
 
 .StartlineSupportLinks a:hover {
@@ -2628,6 +2638,10 @@ span.signup a {
 }
 
 .StartlineSupportLinks1 button:hover {
+  color: #64758f;
+}
+
+.StartlineSupportLinks1:hover {
   color: #64758f;
 }
 
@@ -2672,5 +2686,43 @@ span.signup a {
   display: none;
 }
 #planSetting {
+  display: none;
+}
+
+#DailyRecommendations {
+  display: none;
+}
+
+#Search {
+  display: none;
+}
+
+.SupportPage_img {
+  width: 50vw;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#productinfo {
+  display: none;
+}
+
+#financeinfo {
+  display: none;
+}
+#contactinfo {
+  display: none;
+}
+
+#CreatingAnAccount {
+  display: none;
+}
+
+#SettingUpAccount {
+  display: none;
+}
+
+#GeneralUser {
   display: none;
 }

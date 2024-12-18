@@ -49,98 +49,184 @@
         <p>Welcome to</p>
         <p class="support_navbar_MainTitle"><a href="support.html">Startline Support</a></p>
         <br />
-        <p class="support_navbar_title">GETTING STARTED</p>
-        <p class="support_navbar_subtitle"><a href="support_PlanPrice.html">Plan and pricing</a></p>
-        <p class="support_navbar_subtitle"><a href="support_CreateAccount.html">Creating an account</a></p>
-        <p class="support_navbar_subtitle"><a href="support_SettingUpAccount.html">Setting up an account</a></p>
+        <p class="support_navbar_title"><a href="support_GettingStarted.html">GETTING STARTED</a></p>
+        <p class="support_navbar_subtitle"><a href="support_GettingStarted.html">Plan and pricing</a></p>
+        <p class="support_navbar_subtitle"><a href="support_GettingStarted.html">Creating an account</a></p>
+        <p class="support_navbar_subtitle"><a href="support_GettingStarted.html">Setting up an account</a></p>
         <br />
 
-        <p class="support_navbar_title">FEATURES</p>
-        <p class="support_navbar_subtitle1"><a href="support_features.html">Personalization</a></p>
+        <p class="support_navbar_title"><a href="support_features.html">FEATURES</a></p>
+        <p class="support_navbar_subtitle"><a href="support_features.html">Personalization</a></p>
         <p class="support_navbar_subtitle"><a href="support_features.html">Daily Recommendation</a></p>
         <p class="support_navbar_subtitle"><a href="support_features.html">Search</a></p>
         <br />
         <p class="support_navbar_title"><a href="support_setting.html">SETTINGS</a></p>
-        <p class="support_navbar_subtitle">Account Settings</p>
-        <p class="support_navbar_subtitle">Team Settings</p>
-        <p class="support_navbar_subtitle">Bookmark Settings</p>
-        <p class="support_navbar_subtitle">Plan Settings</p>
+        <p class="support_navbar_subtitle"><a href="support_setting.html">Account Settings</a></p>
+        <p class="support_navbar_subtitle"><a href="support_setting.html">Team Settings</a></p>
+        <p class="support_navbar_subtitle"><a href="support_setting.html">Bookmark Settings</a></p>
+        <p class="support_navbar_subtitle"><a href="support_setting.html">Plan Settings</a></p>
         <br />
-
-        <p class="support_navbar_title">TEAM SETTINGS</p>
-        <p class="support_navbar_subtitle">Managing team information</p>
-        <p class="support_navbar_subtitle">Adding/ removing team members</p>
-        <p class="support_navbar_subtitle">Member roles</p>
-        <p class="support_navbar_subtitle">Editing member roles</p>
+        <p class="support_navbar_title">Frequently Asked Questions</p>
+        <p class="support_navbar_subtitle"><a href="support_FAQ.html">Choosing Funding Round</a></p>
       </article>
       <article class="support_content">
         <br /><br /><br /><br /><br /><br /><br />
-        <p class="StartlineSupportHeader1">Personalization</p>
+        <p class="StartlineSupportHeader1">Features</p>
+        <br />
         <p class="StartlineSupportContent">
-          You are able to select whether you want to be a startup or corporate user of Startline. To know the difference between the two,
-          check out <a href="support_PlanPrice.html">here</a>.
+          Startline provides various features to improve business efficiency for you and your company. Check out what we have included in
+          our platform make your work life easier and more efficient.
         </p>
         <br />
         <article class="flex_spacebetween">
           <p class="StartlineSupportLinks1">
-            <button onclick="showContent('startup')">Startup</button>
+            <button onclick="FeatureContent('personalization'); toggleSetting(account)">Personalization</button>
           </p>
           <p class="StartlineSupportLinks1">
-            <button onclick="showContent('corporate')">Corporate</button>
+            <button onclick="FeatureContent('dailyrecommendations'); toggleSetting(team)">Daily Recommendations</button>
+          </p>
+          <p class="StartlineSupportLinks1">
+            <button onclick="FeatureContent('search'); toggleSetting(bookmark)">Search</button>
           </p>
         </article>
-        <br />
-        <article id="startupContent">
-          <p class="StartlineSupportContent">
-            Startup users will be directed to the startup profile page where we require you to fill out your:
-          </p>
+        <article id="Personalization">
+          <p class="StartlineSupportHeader2">Personalization</p>
+          <br />
+          <p class="StartlineSupportContent">Startline allows all users to personalize the platform for their own needs.</p>
           <br />
           <p class="StartlineSupportContent">
-            <b>Basic Information:</b> <br />This contains information basic information such as contact information, website url, company
-            size, founding year, industry sector, headquarter location and tags that represent your company. <br /><br /><b
-              >Team Information:</b
-            ><br />
-            This contains information about your team members so that potential customers can easily reach out to you <br /><br /><b
-              >Product List:</b
-            ><br />
-            This contains product information such as product photo, brochure, product name and description about the product so that others
-            can have easy access of the things you provide to your customers <br /><br /><b>Financials:</b> This contains information about
-            your funding stage so that clients have an idea about the stability and growth size of your company. <br /><br />Once you have
-            filled in your information, click on save to save the information you have inputed and then verify account to verify that you
-            are really from the company that you state you are from. <br /><br />
+            By entering answers in the the AI Fine tuning in the my company tab, Startline’s AI will recommend unique companies based on
+            your interest.
           </p>
-          <br /><br /><br />
-          <br /><br /><br />
-          <br /><br /><br />
-          <br /><br /><br />
-          <br /><br /><br />
-          <br /><br /><br />
-          <br /><br /><br />
-          <br /><br /><br />
-          <br /><br />
-          <p class="greenbkg">
-            And thats it! Once you are verified you will be able to create your own company card on our search page so that potential
-            customers of your business can search your company and learn about your company!
+          <br />
+          <img src="Photos/SupportPage/AIFineTuning.png" class="SupportPage_img" />
+          <br />
+          <br />
+          <p class="StartlineSupportContent">
+            By clicking on the like or dislike button, your personalized AI model will be narrowed down so that you are provided with
+            companies according to your interest.
           </p>
+          <br />
+          <img src="Photos/SupportPage/AIFineTuning.png" class="SupportPage_img" />
+          <br />
+          <p class="StartlineSupportContent">
+            The bookmark feature on the company cards are another way you can personalize your experience. <br />By bookmarking companies
+            that you are interested in, you can save it in the bookmark setting (Settings -> Bookmark Settings) so that you can utilize the
+            filter to only compare companies that you have bookmarked.
+          </p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <img src="Photos/SupportPage/AIFineTuning.png" class="SupportPage_img" />
+          <br />
+          <br /><br /><br />
         </article>
-        <article id="corporateContent">
-          <p class="StartlineSupportContent">
-            Corporate users will be directed to the corporate profile page where we require you to fill out your:
-          </p>
+        <article id="DailyRecommendations">
+          <p class="StartlineSupportHeader2">Daily Recommendations</p>
           <br />
           <p class="StartlineSupportContent">
-            <b>Basic Information:</b> <br />This contains basic information such as contact information of the person in charge, industry
-            sector you belong and the location of your headquarter <br /><br /><b>Team Member Invitation:</b><br />In this section, input
-            your team member’s email and click send invitation to invite your co-worker onto the Startline workspace under your team.
-            <br /><br /><b>Search Customization:</b><br />This contains some questions we have for you so that we can better manage what
-            kind of companies we should recommend to you! <br /><br />
+            Startline’s AI Model is able to get information in real-time, allowing users to be provided with unique daily recommendations.
           </p>
-          <br /><br /><br />
-          <br /><br /><br />
-          <br /><br /><br />
-          <br /><br /><br />
+          <br />
+          <br />
+          <p class="StartlineSupportContent">
+            Daily recommendations allow users to view companies according to their personalized information to find hidden companies that
+            are within their search needs.
+          </p>
+          <br />
+          <br />
+          <p class="StartlineSupportContent">
+            By clicking on the like or dislike button, your personalized AI model will be narrowed down so that you are provided with
+            companies according to your interest.
+          </p>
+          <br />
+          <br />
+          <img src="Photos/SupportPage/AIFineTuning.png" class="SupportPage_img" />
           <br /><br />
-          <p class="greenbkg">And thats it! Once you have completed up till here, you are good to go to start searching!</p>
+          <br />
+          <br />
+          <br /><br /><br />
+        </article>
+        <article id="Search">
+          <p class="StartlineSupportHeader2">Search</p>
+          <br />
+          <p class="StartlineSupportContent">
+            Startline’s platform provides a search page for all corporate users. Using the search page, users can filter companies based on
+            their needs such as location, finance stage and their bookmark.
+          </p>
+          <br />
+          <br />
+          <img src="Photos/SupportPage/AIFineTuning.png" class="SupportPage_img" />
+          <br /><br />
+          <p class="StartlineSupportContent">
+            After filtering companies that they want to find, they are able to browse through the different company cards to find the
+            company of their need.
+          </p>
+          <br />
+          <br />
+          <img src="Photos/SupportPage/AIFineTuning.png" class="SupportPage_img" />
+          <br /><br />
+          <p class="StartlineSupportContent">
+            By clicking on the “More Details” button in the bottom-right corner of the company card, users are able to view comprehensive
+            information about each company. The content consist of basic information, product list, financials and contact information.
+          </p>
+          <br />
+          <br />
+          <img src="Photos/SupportPage/AIFineTuning.png" class="SupportPage_img" />
+          <br /><br />
+          <article class="flex_spacebetween">
+            <p class="StartlineSupportLinks1">
+              <button onclick="CompanyContentInfo('basic')">Basic Information</button>
+            </p>
+            <p class="StartlineSupportLinks1">
+              <button onclick="CompanyContentInfo('product')">Product</button>
+            </p>
+            <p class="StartlineSupportLinks1">
+              <button onclick="CompanyContentInfo('finance')">Finance</button>
+            </p>
+            <p class="StartlineSupportLinks1">
+              <button onclick="CompanyContentInfo('contact')">Contacts</button>
+            </p>
+          </article>
+          <br />
+          <article id="basicinfo">
+            <p class="StartlineSupportContent">
+              <b>Basic Information</b><br /><br />This section contains a brief summary about the company
+            </p>
+            <br />
+            <br />
+            <img src="Photos/SupportPage/AIFineTuning.png" class="SupportPage_img" />
+            <br /><br />
+          </article>
+          <article id="productinfo">
+            <p class="StartlineSupportContent">
+              <b>Product List</b><br /><br />Product name, product description, product image and product brochure.
+            </p>
+            <br />
+            <br />
+            <img src="Photos/SupportPage/AIFineTuning.png" class="SupportPage_img" />
+            <br /><br />
+          </article>
+          <article id="financeinfo">
+            <p class="StartlineSupportContent">
+              <b>Financials</b><br /><br />A summary of the different funding rounds and amount funded for each stage of the funding
+              process.
+            </p>
+            <br />
+            <br />
+            <img src="Photos/SupportPage/AIFineTuning.png" class="SupportPage_img" />
+            <br /><br />/>
+          </article>
+          <article id="contactinfo">
+            <p class="StartlineSupportContent">
+              <b>Contacts</b><br /><br />Different contact information of employees of the company you are searching for.
+            </p>
+            <br />
+            <br />
+            <img src="Photos/SupportPage/AIFineTuning.png" class="SupportPage_img" />
+            <br /><br />
+          </article>
         </article>
       </article>
     </div>

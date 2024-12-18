@@ -160,7 +160,7 @@ setupEmailChangeHandler("email-domain1", "email-other1");
 setupEmailChangeHandler("email-domain2", "email-other2");
 
 //Change content for startup and corporate setting up account
-function showContent(type) {
+function accountContent(type) {
   const startupContent = document.getElementById("startupContent");
   const corporateContent = document.getElementById("corporateContent");
 
@@ -173,7 +173,7 @@ function showContent(type) {
   }
 }
 
-//Change content for settings
+//Change content for settings support page
 function showContent(type) {
   const accountSetting = document.getElementById("accountSetting");
   const teamSetting = document.getElementById("teamSetting");
@@ -200,6 +200,92 @@ function showContent(type) {
     teamSetting.style.display = "none";
     bookmarkSetting.style.display = "none";
     planSetting.style.display = "block";
+  }
+}
+
+//Change content for settings
+function FeatureContent(type) {
+  const Personalization = document.getElementById("Personalization");
+  const DailyRecommendations = document.getElementById("DailyRecommendations");
+  const Search = document.getElementById("Search");
+
+  if (type === "personalization") {
+    Personalization.style.display = "block";
+    DailyRecommendations.style.display = "none";
+    Search.style.display = "none";
+  } else if (type === "dailyrecommendations") {
+    Personalization.style.display = "none";
+    DailyRecommendations.style.display = "block";
+    Search.style.display = "none";
+  } else if (type === "search") {
+    Personalization.style.display = "none";
+    DailyRecommendations.style.display = "none";
+    Search.style.display = "block";
+  }
+}
+
+//Change content for Company Card content support page
+function CompanyContentInfo(type) {
+  const basicinfo = document.getElementById("basicinfo");
+  const productinfo = document.getElementById("productinfo");
+  const financeinfo = document.getElementById("financeinfo");
+  const contactinfo = document.getElementById("contactinfo");
+
+  if (type === "basic") {
+    basicinfo.style.display = "block";
+    productinfo.style.display = "none";
+    financeinfo.style.display = "none";
+    contactinfo.style.display = "none";
+  } else if (type === "product") {
+    basicinfo.style.display = "none";
+    productinfo.style.display = "block";
+    financeinfo.style.display = "none";
+    contactinfo.style.display = "none";
+  } else if (type === "finance") {
+    basicinfo.style.display = "none";
+    productinfo.style.display = "none";
+    financeinfo.style.display = "block";
+    contactinfo.style.display = "none";
+  } else if (type === "contact") {
+    basicinfo.style.display = "none";
+    productinfo.style.display = "none";
+    financeinfo.style.display = "none";
+    contactinfo.style.display = "block";
+  }
+}
+
+//Getting Started Support Page Dynamic Change
+function GettingStartedContent(type) {
+  const PlanAndPricing = document.getElementById("PlanAndPricing");
+  const CreatingAnAccount = document.getElementById("CreatingAnAccount");
+  const SettingUpAccount = document.getElementById("SettingUpAccount");
+
+  if (type === "planandprice") {
+    PlanAndPricing.style.display = "block";
+    CreatingAnAccount.style.display = "none";
+    SettingUpAccount.style.display = "none";
+  } else if (type === "createaccount") {
+    PlanAndPricing.style.display = "none";
+    CreatingAnAccount.style.display = "block";
+    SettingUpAccount.style.display = "none";
+  } else if (type === "setupaccount") {
+    PlanAndPricing.style.display = "none";
+    CreatingAnAccount.style.display = "none";
+    SettingUpAccount.style.display = "block";
+  }
+}
+
+// FAQ Verify Account Page Dynamic Change
+function verifyContent(type) {
+  const CompanyDomainUser = document.getElementById("CompanyDomainUser");
+  const GeneralUser = document.getElementById("GeneralUser");
+
+  if (type === "companydomainuser") {
+    CompanyDomainUser.style.display = "block";
+    GeneralUser.style.display = "none";
+  } else if (type === "generaluser") {
+    CompanyDomainUser.style.display = "none";
+    GeneralUser.style.display = "block";
   }
 }
 
