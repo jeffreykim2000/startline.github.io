@@ -2453,8 +2453,8 @@ span.signup a {
 
 .flex_spacebetween {
   display: flex;
-  justify-content: space-evenly;
-  column-gap: 10px;
+  justify-content: center;
+  column-gap: 30px;
   margin-top: 20px;
 }
 
@@ -2658,22 +2658,53 @@ span.signup a {
   text-align: center;
 }
 
-.StartlineSupportLinks1 button {
-  width: 70%;
+.StartlineSupport_button {
+  width: 30vw;
   height: max-content;
+  padding: 15px 0px;
   gap: 0px;
+  border-radius: 15px;
+  border: 1px 0px 0px 0px;
   opacity: 0px;
+  border: 1px solid #d4e0ff;
+  margin-bottom: 10px;
+  text-align: center;
+  background: none;
   font-size: 17px;
   font-weight: 400;
   line-height: 26.04px;
-  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #171b23;
+}
+
+.StartlineSupport_button a {
   text-decoration: none;
-  background: none;
-  border: none;
+  color: #171b23;
+}
+
+.StartlineSupport_button button {
+  text-decoration: none;
+  color: #171b23;
   text-align: center;
+  background: none;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26.04px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border: none;
+}
+
+.StartlineSupport_button:hover {
+  color: #64758f;
+}
+
+.StartlineSupport_button button:hover {
+  color: #64758f;
+}
+
+.StartlineSupport_button a:hover {
+  color: #64758f;
 }
 
 .StartlineSupportLinks a:hover {
@@ -2695,11 +2726,12 @@ span.signup a {
 .greenbkg {
   background: #f2faf3;
   border-radius: 10px;
-  padding: 15px 20px;
-  width: fit-content;
-  margin-right: 60px;
+  padding: 25px 30px;
+  width: 50vw;
   font-size: 19px;
   letter-spacing: 0.01em;
+  display: block;
+  margin: auto;
 }
 
 .greenbkg ol {
@@ -2709,21 +2741,23 @@ span.signup a {
 .greybkg {
   background: #f6f6f6;
   border-radius: 10px;
-  padding: 15px 20px;
-  width: fit-content;
-  margin-right: 60px;
+  padding: 25px 30px;
+  width: 50vw;
   font-size: 19px;
   letter-spacing: 0.01em;
+  display: block;
+  margin: auto;
 }
 
 .redbkg {
   background: #fdf5ef;
   border-radius: 10px;
-  padding: 15px 20px;
-  width: fit-content;
-  margin-right: 60px;
+  padding: 25px 30px;
+  width: 50vw;
   font-size: 19px;
   letter-spacing: 0.01em;
+  display: block;
+  margin: auto;
 }
 
 #corporateContent {
