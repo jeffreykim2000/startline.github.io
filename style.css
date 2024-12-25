@@ -214,7 +214,7 @@ body {
   height: 77px;
   gap: 0px;
   opacity: 1;
-  font-size: 200px;
+  font-size: 100px;
   font-weight: 650px;
   line-height: 160px;
   text-align: center;
@@ -226,7 +226,7 @@ body {
   height: 32px;
   gap: 0px;
   opacity: 1;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 150px;
   text-align: center;
@@ -2528,7 +2528,6 @@ span.signup a {
   line-height: 62.5px;
   letter-spacing: 0.10000000149011612px;
   text-align: left;
-  text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #2962ff;
 }
@@ -2543,7 +2542,6 @@ span.signup a {
   line-height: 62.5px;
   letter-spacing: 0.10000000149011612px;
   text-align: left;
-  text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #171b23;
 }
@@ -2558,22 +2556,19 @@ span.signup a {
   line-height: 62.5px;
   letter-spacing: 0.10000000149011612px;
   text-align: left;
-  text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #171b23;
 }
 
 .StartlineSupportContent {
   width: 90%;
-  height: 52px;
+  height: max-content;
   gap: 0px;
   opacity: 0px;
   font-size: 19px;
   font-weight: 400;
   line-height: 26.04px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #64758f;
   letter-spacing: 0.01em;
 }
@@ -2588,7 +2583,6 @@ span.signup a {
   line-height: 41.66px;
   letter-spacing: 0.10000000149011612px;
   text-align: left;
-  text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #171b23;
 }
@@ -2621,7 +2615,6 @@ span.signup a {
   font-size: 17px;
   font-weight: 400;
   line-height: 26.04px;
-  text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
@@ -2634,7 +2627,6 @@ span.signup a {
   font-weight: 400;
   line-height: 26.04px;
   text-align: left;
-  text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #171b23;
   text-decoration: none;
@@ -2649,7 +2641,6 @@ span.signup a {
   font-weight: 400;
   line-height: 26.04px;
   text-align: left;
-  text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #171b23;
   text-decoration: none;
@@ -2673,7 +2664,6 @@ span.signup a {
   font-size: 17px;
   font-weight: 400;
   line-height: 26.04px;
-  text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
@@ -2690,7 +2680,6 @@ span.signup a {
   font-size: 17px;
   font-weight: 400;
   line-height: 26.04px;
-  text-underline-position: from-font;
   text-decoration-skip-ink: none;
   border: none;
 }
@@ -2778,12 +2767,35 @@ span.signup a {
   display: none;
 }
 
+#TechnologyTagging {
+  display: none;
+}
+
 #Search {
+  display: none;
+}
+
+#MultiAccount{
+  display: none;
+}
+
+#CreateCompanyCard{
+  display: none;
+}
+
+#LocationIdentifier{
   display: none;
 }
 
 .SupportPage_img {
   width: 50vw;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.SystemUpdate_img{
+  width: 30vw;
   height: auto;
   display: block;
   margin: auto;
@@ -2811,3 +2823,4 @@ span.signup a {
 #GeneralUser {
   display: none;
 }
+
