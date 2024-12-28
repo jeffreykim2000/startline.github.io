@@ -210,28 +210,30 @@ body {
 }
 
 .error_title {
-  width: max-content;
+  width: 30vw;
   height: 77px;
   gap: 0px;
   opacity: 1;
-  font-size: 100px;
+  font-size: 120px;
   font-weight: 650px;
-  line-height: 160px;
-  text-align: center;
-  margin: auto;
+  line-height: 120px;
+  text-align: left;
+  margin-left: 150px;
+  align-items: left;
 }
 
 .error_content {
-  width: max-content;
-  height: 32px;
+  width: 36vw;
+  height: fit-content;
   gap: 0px;
   opacity: 1;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 400;
   line-height: 150px;
-  text-align: center;
+  text-align: left;
   color: #64758f;
-  margin: auto;
+  margin-left: 150px;
+  line-height: 1.5;
 }
 
 .homepage1_1_title {
@@ -2449,11 +2451,26 @@ span.signup a {
   display: flex;
   justify-content: left;
   padding-bottom: 10px;
+  margin: 20px;
+  padding-left: 20px;
+}
+
+.dotlottie-player {
+  position: fixed;
+  top: 100px;
+  right: 100px;
 }
 
 .flex_spacebetween {
   display: flex;
   justify-content: center;
+  column-gap: 30px;
+  margin-top: 20px;
+}
+
+.flex_left {
+  display: flex;
+  justify-content: left;
   column-gap: 30px;
   margin-top: 20px;
 }
@@ -2741,7 +2758,7 @@ span.signup a {
 .redbkg {
   background: #fdf5ef;
   border-radius: 10px;
-  padding: 25px 30px;
+  padding: 15px 30px;
   width: 50vw;
   font-size: 19px;
   letter-spacing: 0.01em;
@@ -2775,15 +2792,15 @@ span.signup a {
   display: none;
 }
 
-#MultiAccount{
+#MultiAccount {
   display: none;
 }
 
-#CreateCompanyCard{
+#CreateCompanyCard {
   display: none;
 }
 
-#LocationIdentifier{
+#LocationIdentifier {
   display: none;
 }
 
@@ -2794,7 +2811,7 @@ span.signup a {
   margin: auto;
 }
 
-.SystemUpdate_img{
+.SystemUpdate_img {
   width: 30vw;
   height: auto;
   display: block;
@@ -2823,4 +2840,3 @@ span.signup a {
 #GeneralUser {
   display: none;
 }
-

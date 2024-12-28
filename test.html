@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Startline</title>
+    <meta name="author" content="Jeffrey" />
+    <meta name="refresh" content="60" />
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1 id="welcome"></h1>
+    <a id="about" href="#">About Us</a>
+    <a id="contact" href="#">Contact Us</a>
+    <br />
+    <button id="switchToEnglish">Switch to English</button>
+    <button id="switchToKorean">스위치 한국어로</button>
+  </body>
+  <script>
+    fetch("content.json")
+      .then((response) => response.json())
+      .then((data) => {
+        function updateContent(language) {
+          document.getElementById("welcome").textContent = data[language].welcome_message;
+          document.getElementById("about").textContent = data[language].about;
+          document.getElementById("contact").textContent = data[language].contact;
+        }
+
+        // Initially load English content
+        updateContent("en");
+
+        // Add event listeners to switch language
+        document.getElementById("switchToEnglish").addEventListener("click", () => updateContent("en"));
+        document.getElementById("switchToKorean").addEventListener("click", () => updateContent("ko"));
+      });
+  </script>
+</html>
