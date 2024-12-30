@@ -2,9 +2,9 @@ fetch("content.json")
   .then((response) => response.json())
   .then((data) => {
     function updateContent(language) {
-      document.getElementById("welcome").textContent = data[language].welcome_message;
-      document.getElementById("about").textContent = data[language].about;
-      document.getElementById("contact").textContent = data[language].contact;
+      document.getElementById("nav1").textContent = data[language].nav1;
+      document.getElementById("nav2").textContent = data[language].nav2;
+      document.getElementById("nav3").textContent = data[language].nav3;
     }
 
     // Initially load English content

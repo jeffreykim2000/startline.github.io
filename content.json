@@ -1,7 +1,7 @@
 {
   "en": {
-    "welcome_message": "Welcome to our website!",
-    "about": "About Us",
-    "contact": "Contact Us"
+    "nav1": "Why Startline",
+    "nav2": "Price",
+    "nav3": "Resources"
   }
 }
