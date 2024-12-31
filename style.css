@@ -817,7 +817,7 @@ body {
 .blue_btn {
   width: max-content;
   height: max-content;
-  padding: 14px 10px 14px 10px;
+  padding: 14px 30px;
   gap: 10px;
   border-radius: 60px;
   opacity: 1;
@@ -2492,7 +2492,7 @@ span.signup a {
   text-decoration: none;
 }
 
-.dropdown-content_language a {
+.dropdown-content_language button {
   width: max-content;
   height: 35px;
   gap: 0px;
@@ -2505,9 +2505,11 @@ span.signup a {
   text-decoration: none;
   padding: 0px 10px 0px 10px;
   margin: none;
+  border: none;
+  background: none;
 }
 
-.dropdown-content_language a:hover {
+.dropdown-content_language button:hover {
   font-weight: 600;
 }
 

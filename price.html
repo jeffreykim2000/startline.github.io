@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Startline</title>
@@ -19,13 +19,13 @@
       <div class="navigationbox">
         <div class="nav">
           <a href="index.html"><img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="nav_logo" /></a>
-          <a href="whystartline.html">Why Startline</a>
-          <a href="price.html">Price</a>
+          <a id="nav1" href="whystartline.html">Why Startline</a>
+          <a id="nav2" href="price.html">Price</a>
           <article class="dropdown">
-            <span>Resources</span>
+            <span id="nav3">Resources</span>
             <div class="dropdown-content">
-              <a href="support.html">Support</a><br />
-              <a href="contactus.html">Contact</a>
+              <a id="nav4" href="support.html">Support</a><br />
+              <a id="nav5" href="contactus.html">Contact</a>
             </div>
           </article>
         </div>
@@ -33,122 +33,124 @@
           <article class="dropdown_language">
             <img src="./Photos/language.png" class="nav_language" />
             <div class="dropdown-content_language">
-              <a href="index.html">English</a><br />
-              <a href="">Chinese</a><br />
-              <a href="">한국어</a><br />
-              <a href="">Japanese</a>
+              <button id="switchToEnglish">English</button><br />
+              <button id="switchToChinese">Chinese</button><br />
+              <button id="switchToKorean">한국어</button><br />
+              <button id="switchToJapanese">Japanese</button>
             </div>
           </article>
-          <a href="loginStartup.html" class="nav_login">Login</a>
-          <a href="join.html" class="nav_join">Join</a>
+          <a id="nav6" href="loginStartup.html" class="nav_login">Login</a>
+          <a id="nav7" href="join.html" class="nav_join">Join</a>
         </div>
       </div>
     </div>
     <div class="pricing">
       <br />
       <br />
-      <p class="page_title"><img src="Photos/Pricing.png" class="page_title_ICON" />PRICING</p>
+      <p id="pricing" class="page_title"><img src="Photos/Pricing.png" class="page_title_ICON" />PRICING</p>
       <br />
-      <p class="pricing_subtitle">Choose the plan that matches your needs</p>
+      <p id="pricing_slogan" class="pricing_subtitle">Choose the plan that matches your needs</p>
       <article class="pricing1">
         <article class="pricing2">
-          <p class="pricing2_1">Free Forever</p>
+          <p id="pricing_free" class="pricing2_1">Free Forever</p>
           <br />
-          <p class="pricing2_2">$0</p>
+          <p id="pricing_free_price" class="pricing2_2">$0</p>
           <br />
-          <p class="pricing2_3">Global Database</p>
+          <p id="pricing_free_tag" class="pricing2_3">Global Database</p>
           <p class="pricing2_3"></p>
           <p class="pricing2_3"></p>
           <br />
           <article class="flex_left">
             <img src="./Photos/check.png" class="checkIcon" />
-            <p class="pricing2_4">Unlock Startline's AI-powered Matching Features</p>
+            <p id="pricing_free_feature_1" class="pricing2_4">Unlock Startline's AI-powered Matching Features</p>
           </article>
           <article class="flex_left">
             <img src="./Photos/check.png" class="checkIcon" />
-            <p class="pricing2_4">Search 100 company profiles per month with basic content</p>
+            <p id="pricing_free_feature_2" class="pricing2_4">Search 100 company profiles per month with basic content</p>
           </article>
           <article class="flex_left">
             <img src="./Photos/check.png" class="checkIcon" />
-            <p class="pricing2_4">Access to basic information</p>
+            <p id="pricing_free_feature_3" class="pricing2_4">Access to basic information</p>
           </article>
         </article>
         <article class="pricing2">
-          <p class="pricing2_1">Business</p>
+          <p id="pricing_business" class="pricing2_1">Business</p>
           <br />
-          <p class="pricing2_2">$49/month</p>
+          <p id="pricing_business_price" class="pricing2_2">$49/month</p>
           <br />
-          <p class="pricing2_3">Global Database</p>
-          <p class="pricing2_3">Data Customization</p>
-          <p class="pricing2_3"></p>
+          <p id="pricing_business_tag_1" class="pricing2_3">Global Database</p>
+          <p id="pricing_business_tag_2" class="pricing2_3">Data Customization</p>
+          <p id="" class="pricing2_3"></p>
           <br />
           <article class="flex_left">
             <img src="./Photos/check.png" class="checkIcon" />
-            <p class="pricing2_4">Unlock Startline's AI-powered Matching Features</p>
+            <p id="pricing_business_feature_1" class="pricing2_4">Unlock Startline's AI-powered Matching Features</p>
           </article>
           <article class="flex_left">
             <img src="./Photos/check.png" class="checkIcon" />
-            <p class="pricing2_4">Search 600 company profiles per month with full content</p>
+            <p id="pricing_business_feature_2" class="pricing2_4">Search 600 company profiles per month with full content</p>
           </article>
           <article class="flex_left">
             <img src="./Photos/check.png" class="checkIcon" />
-            <p class="pricing2_4">Receive customized content from our dedicated success manager</p>
+            <p id="pricing_business_feature_3" class="pricing2_4">Receive customized content from our dedicated success manager</p>
           </article>
           <article class="flex_left">
             <img src="./Photos/check.png" class="checkIcon" />
-            <p class="pricing2_4">Free upgrade to future platform features</p>
+            <p id="pricing_business_feature_4" class="pricing2_4">Free upgrade to future platform features</p>
           </article>
         </article>
         <article class="pricing2">
-          <p class="pricing2_1">Enterprise</p>
+          <p id="pricing_enterprise" class="pricing2_1">Enterprise</p>
           <br />
-          <p class="pricing2_2">$199/month</p>
+          <p id="pricing_enterprise_price" class="pricing2_2">$199/month</p>
           <br />
-          <p class="pricing2_3">Global Database</p>
-          <p class="pricing2_3">Data Customization</p>
-          <p class="pricing2_3">Professional Consulting Support</p>
+          <p id="pricing_enterprise_tag_1" class="pricing2_3">Global Database</p>
+          <p id="pricing_enterprise_tag_2" class="pricing2_3">Data Customization</p>
+          <p id="pricing_enterprise_tag_3" class="pricing2_3">Professional Consulting Support</p>
           <br />
           <article class="flex_left">
             <img src="./Photos/check.png" class="checkIcon" />
-            <p class="pricing2_4">Unlock Startline's AI-powered Matching Features</p>
+            <p id="pricing_enterprise_feature_1" class="pricing2_4">Unlock Startline's AI-powered Matching Features</p>
           </article>
           <article class="flex_left">
             <img src="./Photos/check.png" class="checkIcon" />
-            <p class="pricing2_4">Access to unlimited company profiles with full results</p>
+            <p id="pricing_enterprise_feature_2" class="pricing2_4">Access to unlimited company profiles with full results</p>
           </article>
           <article class="flex_left">
             <img src="./Photos/check.png" class="checkIcon" />
-            <p class="pricing2_4">Receive customized content from our assigned success manager</p>
+            <p id="pricing_enterprise_feature_3" class="pricing2_4">Receive customized content from our assigned success manager</p>
           </article>
           <article class="flex_left">
             <img src="./Photos/check.png" class="checkIcon" />
-            <p class="pricing2_4">Get professional consulting support from industry renowned subject matter expert</p>
+            <p id="pricing_enterprise_feature_4" class="pricing2_4">
+              Get professional consulting support from industry renowned subject matter expert
+            </p>
           </article>
           <article class="flex_left">
             <img src="./Photos/check.png" class="checkIcon" />
-            <p class="pricing2_4">Free upgrade to future platform features</p>
+            <p id="pricing_enterprise_feature_5" class="pricing2_4">Free upgrade to future platform features</p>
           </article>
           <article class="flex_left">
             <img src="./Photos/check.png" class="checkIcon" />
-            <p class="pricing2_4">Collaborate with up to 5 team members</p>
+            <p id="pricing_enterprise_feature_6" class="pricing2_4">Collaborate with up to 5 team members</p>
           </article>
         </article>
       </article>
       <br />
       <br />
-      <p class="pricing_label">All prices are in USD</p>
+      <p id="pricing_price_usd" class="pricing_label">All prices are in USD</p>
     </div>
     <div class="footer1">
       <div class="footer1_1">
-        <h3>Questions? Talk to us</h3>
-        <h4>We are here around the clock to assist you</h4>
+        <h3 id="questions">Questions? Talk to us</h3>
+        <h4 id="questions_slogan">We are here around the clock to assist you</h4>
       </div>
       <br />
       <br />
       <br />
       <div class="footer1_2">
-        <a href="join.html" target="_blank" class="trystartlinenow_btn">Try Startline Now</a>
-        <a href="join.html" target="_blank" class="contactus_btn">Contact Us</a>
+        <a id="questions_content" href="join.html" target="_blank" class="trystartlinenow_btn">Try Startline Now</a>
+        <a id="questions_contact" href="join.html" target="_blank" class="contactus_btn">Contact Us</a>
       </div>
     </div>
 
@@ -198,4 +200,4 @@
   <script src="smoothScroll.js"></script>
   <script src="lightbox-plus-jquery.js"></script>
   <script src="features.js"></script>
-</html>
+</html> -->
