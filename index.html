@@ -19,13 +19,13 @@
       <div class="navigationbox">
         <div class="nav">
           <a href="index.html"><img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="nav_logo" /></a>
-          <a href="whystartline.html">Why Startline</a>
-          <a href="price.html">Price</a>
+          <a id="nav1" href="whystartline.html">Why Startline</a>
+          <a  id="nav2" href="price.html">Price</a>
           <article class="dropdown">
-            <span>Resources</span>
+            <span id="nav3" >Resources</span>
             <div class="dropdown-content">
-              <a href="support.html">Support</a><br />
-              <a href="contactus.html">Contact</a>
+              <a id="nav4" href="support.html">Support</a><br />
+              <a id="nav5" href="contactus.html">Contact</a>
             </div>
           </article>
         </div>
@@ -33,14 +33,14 @@
           <article class="dropdown_language">
             <img src="./Photos/language.png" class="nav_language" />
             <div class="dropdown-content_language">
-              <a href="index.html">English</a><br />
-              <a href="">Chinese</a><br />
-              <a href="">한국어</a><br />
-              <a href="">Japanese</a>
+              <button id="switchToEnglish">English</button><br />
+              <button id="switchToChinese">Chinese</button><br />
+              <button id="switchToKorean">한국어</button><br />
+              <button id="switchToJapanese">Japanese</button>
             </div>
           </article>
-          <a href="loginStartup.html" class="nav_login">Login</a>
-          <a href="join.html" class="nav_join">Join</a>
+          <a id="nav6" href="loginStartup.html" class="nav_login">Login</a>
+          <a id="nav7" href="join.html" class="nav_join">Join</a>
         </div>
       </div>
     </div>
@@ -49,17 +49,17 @@
         <br />
         <br />
         <br />
-        <p class="homepage1_1_title">We are the <span class="gradient_text">Startline</span></p>
-        <p class="homepage1_1_content">Where innovation for startups and corporates begins</p>
+        <p id="index_title" class="homepage1_1_title">We are the <span class="gradient_text">Startline</span></p>
+        <p id="index_slogan" class="homepage1_1_content">Where innovation for startups and corporates begins</p>
         <br />
-        <p class="homepage1_1_content1">
+        <p id="index_context" class="homepage1_1_content1">
           We empower the collaborative partnership between <span style="color: #2962ff">startups </span> and
           <span style="color: #2962ff">corporates </span>
         </p>
         <br />
-        <p class="blue_btn"><a href="join.html" target="_blank">Join Now</a></p>
+        <p id="join_now" class="blue_btn"><a href="join.html" target="_blank">Join Now</a></p>
         <br />
-        <p class="homepage2_1_title">THIS WEEK ON STARTLINE</p>
+        <p id="weekly_startline" class="homepage2_1_title">THIS WEEK ON STARTLINE</p>
       </article>
     </div>
     <br />
@@ -79,14 +79,13 @@
     <br />
     <br />
     <br />
-
     <p class="centerimage">
       <img src="Photos/photo1.png" class="coverphoto" />
     </p>
     <div class="homepage3">
       <article class="homepage3_1">
-        <p class="page_title"><img src="Photos/OurProduct.png" class="page_title_ICON" />OUR PRODUCT</p>
-        <p class="page_subtitle">Empowering futures at the <span class="gradient_text"> Startline</span> for startups and corporates</p>
+        <p id="our_product" class="page_title"><img src="Photos/OurProduct.png" class="page_title_ICON" />OUR PRODUCT</p>
+        <p id="product_slogan" class="page_subtitle">Empowering futures at the <span class="gradient_text"> Startline</span> for startups and corporates</p>
       </article>
     </div>
     <div class="features">
@@ -241,4 +240,5 @@
   <script src="smoothScroll.js"></script>
   <script src="lightbox-plus-jquery.js"></script>
   <script src="features.js"></script>
+  <script src="language_change.js"></script>
 </html>

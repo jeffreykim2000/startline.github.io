@@ -12,5 +12,5 @@ fetch("content.json")
 
     // Add event listeners to switch language
     document.getElementById("switchToEnglish").addEventListener("click", () => updateContent("en"));
-    document.getElementById("switchToKorean").addEventListener("click", () => updateContent("ko"));
+    document.getElementById("switchToKorean").addEventListener("click", () => updateContent("kr"));
   });
