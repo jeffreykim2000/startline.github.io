@@ -70,6 +70,11 @@ function updateContent(language) {
   document.getElementById("why_startline_title_fully_automated").textContent = data[language].why_startline_title_fully_automated;
   document.getElementById("why_startline_content_fully_automated").textContent = data[language].why_startline_content_fully_automated;
 
+  document.getElementById("questions").textContent = data[language].questions;
+  document.getElementById("questions_slogan").textContent = data[language].questions_slogan;
+  document.getElementById("questions_content").textContent = data[language].questions_content;
+  document.getElementById("questions_contact").textContent = data[language].questions_contact;
+
   document.getElementById("problem_content_low_outreach").textContent = data[language].problem_content_low_outreach;
   document.getElementById("problem_topic_data_inaccuracy").textContent = data[language].problem_topic_data_inaccuracy;
   document.getElementById("problem_content_data_inaccuracy").textContent = data[language].problem_content_data_inaccuracy;
@@ -83,3 +88,5 @@ function updateContent(language) {
 
 document.getElementById("switchToEnglish").addEventListener("click", () => updateContent("en"));
 document.getElementById("switchToKorean").addEventListener("click", () => updateContent("kr"));
+document.getElementById("switchToChinese").addEventListener("click", () => updateContent("cn"));
+document.getElementById("switchToJapanese").addEventListener("click", () => updateContent("jp"));

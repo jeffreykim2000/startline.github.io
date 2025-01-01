@@ -19,13 +19,13 @@
       <div class="navigationbox">
         <div class="nav">
           <a href="index.html"><img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="nav_logo" /></a>
-          <a href="whystartline.html">Why Startline</a>
-          <a href="price.html">Price</a>
+          <a id="nav1" href="whystartline.html">Why Startline</a>
+          <a id="nav2" href="price.html">Price</a>
           <article class="dropdown">
-            <span>Resources</span>
+            <span id="nav3">Resources</span>
             <div class="dropdown-content">
-              <a href="support.html">Support</a><br />
-              <a href="contactus.html">Contact</a>
+              <a id="nav4" href="support.html">Support</a><br />
+              <a id="nav5" href="contactus.html">Contact</a>
             </div>
           </article>
         </div>
@@ -33,14 +33,14 @@
           <article class="dropdown_language">
             <img src="./Photos/language.png" class="nav_language" />
             <div class="dropdown-content_language">
-              <a href="index.html">English</a><br />
-              <a href="">Chinese</a><br />
-              <a href="">한국어</a><br />
-              <a href="">Japanese</a>
+              <button id="switchToEnglish">English</button><br />
+              <button id="switchToChinese">Chinese</button><br />
+              <button id="switchToKorean">한국어</button><br />
+              <button id="switchToJapanese">Japanese</button>
             </div>
           </article>
-          <a href="loginStartup.html" class="nav_login">Login</a>
-          <a href="join.html" class="nav_join">Join</a>
+          <a id="nav6" href="loginStartup.html" class="nav_login">Login</a>
+          <a id="nav7" href="join.html" class="nav_join">Join</a>
         </div>
       </div>
     </div>
@@ -48,21 +48,21 @@
     <br />
     <div class="join1">
       <article class="join1_main">
-        <p class="join1_main1">WELCOME TO STARTLINE, Michael</p>
-        <p class="join1_main2">Select your plan</p>
+        <p class="join1_main1"><span id="join1_title">Welcome to Startline,</span> Michael</p>
+        <p id="join1_select" class="join1_main2">Select your plan</p>
         <br />
         <ul id="myUL">
           <li>
-            <span class="caret">Can I change my plan later?</span>
+            <span id="join1_faq_1" class="caret">Can I change my plan later?</span>
             <ul class="nested">
-              <li>Of course! You can change your plan by going to Settings > Plan Settings.</li>
+              <li id="join1_faq_ans_1">Of course! You can change your plan by goings > Plan Settings.</li>
             </ul>
           </li>
         </ul>
         <ul id="myUL">
-          <span class="caret">Not all of my questions have been answered. Who do I reach out to?</span>
+          <span id="join1_faq_2" class="caret">Not all of my questions have been answered. Who do I reach out to?</span>
           <ul class="nested">
-            <li>Checked out our <a href="support.html">support page </a>or <a href="contactus.html">contact us!</a></li>
+            <li id="join1_faq_ans_2">Checked out our support page or contact us!</li>
           </ul>
         </ul>
       </article>
@@ -70,41 +70,54 @@
         <form action="">
           <article class="join1_prices">
             <label for="startup" class="join1_prices_1">
-              <p class="join1_prices_11"><input type="checkbox" id="startup" onclick="updateCheck('startup')" /> I am a Startup</p>
+              <p class="join1_prices_11">
+                <input type="checkbox" id="startup" onclick="updateCheck('startup')" /> <span id="join1_startup">I am a Startup</span>
+              </p>
             </label>
-            <p class="join1_prices_13">Showcase your product to corporate users with a personalized profile page, all for free!</p>
+            <p id="join1_startup_content" class="join1_prices_13">
+              Showcase your product to corporate users with a personalized profile page, all for free!
+            </p>
           </article>
           <article class="join1_prices">
             <label for="free" class="join1_prices_1">
-              <p class="join1_prices_11"><input type="checkbox" id="free" onclick="updateCheck('free')" /> Free</p>
-              <p class="join1_prices_12">$0</p>
+              <p class="join1_prices_11">
+                <input type="checkbox" id="free" onclick="updateCheck('free')" /> <span id="join1_corporate_free_title">Free</span>
+              </p>
+              <p id="join1_corporate_free_price" class="join1_prices_12">$0</p>
             </label>
-            <p class="join1_prices_13">
+            <p id="join1_corporate_free_content" class="join1_prices_13">
               Access 100 company profiles for essential information such as website links and employee numbers at no cost.
             </p>
           </article>
           <article class="join1_prices">
             <label for="business" class="join1_prices_1">
-              <p class="join1_prices_11"><input type="checkbox" id="business" onclick="updateCheck('business')" /> Business</p>
-              <p class="join1_prices_12">$49 /month</p>
+              <p class="join1_prices_11">
+                <input type="checkbox" id="business" onclick="updateCheck('business')" />
+                <span id="join1_corporate_business_title">Business</span>
+              </p>
+              <p id="join1_corporate_business_price" class="join1_prices_12">$49 /month</p>
             </label>
-            <p class="join1_prices_13">
+            <p id="join1_corporate_business_content" class="join1_prices_13">
               Dive deeper with 600 company profiles featuring basic, product, finance, and contact information for comprehensive insights.
             </p>
           </article>
           <article class="join1_prices">
             <label for="corporate" class="join1_prices_1">
-              <p class="join1_prices_11"><input type="checkbox" id="corporate" onclick="updateCheck('corporate')" /> Corporate</p>
-              <p class="join1_prices_12">$199 /month</p>
+              <p class="join1_prices_11">
+                <input type="checkbox" id="corporate" onclick="updateCheck('corporate')" /><span id="join1_corporate_enterprise_title">
+                  Enterprise</span
+                >
+              </p>
+              <p id="join1_corporate_enterprise_price" class="join1_prices_12">$199 /month</p>
             </label>
-            <p class="join1_prices_13">
+            <p id="join1_corporate_enterprise_content" class="join1_prices_13">
               Unlock unlimited company profile views with detailed information for extensive exploration. Added with a personalized
               consultation service from industry experts
             </p>
           </article>
           <p id="pay" style="display: none">Payment Confirmed</p>
           <br />
-          <article class="pay_btn" id="payButton" onclick="pay()">Pay</article>
+          <article class="pay_btn" id="join1_pay" onclick="pay()">Pay</article>
         </form>
       </article>
     </div>
@@ -154,4 +167,5 @@
   <script src="smoothScroll.js"></script>
   <script src="lightbox-plus-jquery.js"></script>
   <script src="features.js"></script>
+  <script type="module" src="language_change_join1.js"></script>
 </html>

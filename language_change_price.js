@@ -36,7 +36,13 @@ function updateContent(language) {
   document.getElementById("pricing_enterprise_feature_5").textContent = data[language].pricing_enterprise_feature_5;
   document.getElementById("pricing_enterprise_feature_6").textContent = data[language].pricing_enterprise_feature_6;
   document.getElementById("pricing_price_usd").textContent = data[language].pricing_price_usd;
+  document.getElementById("questions").textContent = data[language].questions;
+  document.getElementById("questions_slogan").textContent = data[language].questions_slogan;
+  document.getElementById("questions_content").textContent = data[language].questions_content;
+  document.getElementById("questions_contact").textContent = data[language].questions_contact;
 }
 
 document.getElementById("switchToEnglish").addEventListener("click", () => updateContent("en"));
 document.getElementById("switchToKorean").addEventListener("click", () => updateContent("kr"));
+document.getElementById("switchToChinese").addEventListener("click", () => updateContent("cn"));
+document.getElementById("switchToJapanese").addEventListener("click", () => updateContent("jp"));

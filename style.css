@@ -389,16 +389,15 @@ body {
 
 .page_title_ICON {
   width: 15px;
-  height: 15px;
+  height: auto;
   gap: 0px;
   opacity: 1;
   padding-right: 10px;
-  padding-top: 13px;
   margin: auto;
 }
 
 .page_subtitle {
-  width: 800px;
+  width: 900px;
   height: 120px;
   gap: 0px;
   opacity: 1;
@@ -420,6 +419,7 @@ body {
   padding: none;
   margin: auto;
   justify-content: center;
+  height: fit-content;
 }
 
 .features {
@@ -591,7 +591,7 @@ body {
 }
 
 .homepage4_2 {
-  width: 648px;
+  width: max-content;
   height: 54px;
   gap: 35px;
   opacity: 1;
@@ -601,7 +601,7 @@ body {
 }
 
 .homepage4_2_btn1 a {
-  width: Fixed (286px) px;
+  width: max-content;
   height: Hug (54px) px;
   padding: 14px 40px 14px 40px;
   gap: 10px;
@@ -622,7 +622,7 @@ body {
 }
 
 .homepage4_2_btn2 a {
-  width: 300px;
+  width: max-content;
   height: 50px;
   padding: 14px 40px 14px 40px;
   gap: 10px;
@@ -992,7 +992,7 @@ body {
 
 .footer_flex_space_between {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   padding: none;
   margin: none;
   column-gap: 100px;
@@ -1023,7 +1023,7 @@ body {
 }
 
 .footer_logo_content {
-  width: 342px;
+  width: 500px;
   height: 84px;
   gap: 0px;
   opacity: 1;
@@ -1059,6 +1059,10 @@ body {
   text-align: left;
   color: #64758f;
   text-decoration: none;
+}
+
+.footer_content a:hover {
+  color: #205cff;
 }
 
 .footer2_2 {
@@ -1266,8 +1270,8 @@ body {
 }
 
 .pricing {
-  width: 100%;
-  height: 900px;
+  width: 100vw;
+  height: max-content;
   padding-top: 80px;
   gap: 80px;
   opacity: 1;
@@ -1291,7 +1295,7 @@ body {
 
 .pricing1 {
   width: max-content;
-  height: 608px;
+  height: max-content;
   gap: 18px;
   opacity: 1;
   display: flex;
@@ -1302,7 +1306,7 @@ body {
 
 .pricing2 {
   width: 350px;
-  height: 550px;
+  height: 700px;
   padding: 15px;
   gap: 0px;
   border-radius: 20px;
@@ -1706,7 +1710,7 @@ body {
 }
 
 .join_main2 {
-  width: max-content;
+  width: 30vw;
   height: 31px;
   gap: 0px;
   opacity: 1;
@@ -2060,7 +2064,7 @@ ul,
   text-align: center;
   color: #2962ff;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 40px;
   justify-content: center;
   height: 80px;
 }
@@ -2104,22 +2108,27 @@ ul,
 
 /* Set a style for all buttons */
 .login_btn {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: linear-gradient(274.87deg, #2962ff -0.25%, #3676ff 51.72%, #4b97ff 99.75%);
   border: none;
-  width: max-content;
+  width: fit-content;
   height: max-content;
   padding: 14px 40px 14px 40px;
   gap: 0px;
   border-radius: 30px;
   opacity: 1;
   justify-content: center;
-  margin-top: 30px;
-  margin-left: 33%;
+  text-align: center;
+  align-items: center;
   color: #ffffff;
   text-decoration: none;
   font-size: 24px;
   font-weight: 700;
   line-height: 26px;
+  margin: 60px 0px 0px 0px;
+  white-space: nowrap; /* Ensure text stays on one line */
 }
 
 .login_btn a {

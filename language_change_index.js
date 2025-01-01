@@ -18,17 +18,19 @@ function updateContent(language) {
   document.getElementById("feature_title_1").textContent = data[language].feature_title_1;
   document.getElementById("feature_slogan_1").textContent = data[language].feature_slogan_1;
   document.getElementById("feature_content_1").textContent = data[language].feature_content_1;
-  document.getElementById("learn_more").textContent = data[language].learn_more;
+  document.getElementById("learn_more_1").textContent = data[language].learn_more_1;
   document.getElementById("feature_title_2").textContent = data[language].feature_title_2;
   document.getElementById("feature_slogan_2").textContent = data[language].feature_slogan_2;
   document.getElementById("feature_content_2").textContent = data[language].feature_content_2;
-  document.getElementById("learn_more").textContent = data[language].learn_more;
+  document.getElementById("learn_more_2").textContent = data[language].learn_more_2;
   document.getElementById("feature_title_3").textContent = data[language].feature_title_3;
   document.getElementById("feature_slogan_3").textContent = data[language].feature_slogan_3;
   document.getElementById("feature_content_3").textContent = data[language].feature_content_3;
+  document.getElementById("learn_more_3").textContent = data[language].learn_more_3;
   document.getElementById("simeff").textContent = data[language].simeff;
   document.getElementById("simeff_title").textContent = data[language].simeff_title;
   document.getElementById("simeff_content").textContent = data[language].simeff_content;
+  document.getElementById("simeff_demo").textContent = data[language].simeff_demo;
   document.getElementById("partners_clients").textContent = data[language].partners_clients;
   document.getElementById("whatwedo").textContent = data[language].whatwedo;
   document.getElementById("whatwedo_slogan").textContent = data[language].whatwedo_slogan;
@@ -37,7 +39,10 @@ function updateContent(language) {
   document.getElementById("questions").textContent = data[language].questions;
   document.getElementById("questions_slogan").textContent = data[language].questions_slogan;
   document.getElementById("questions_content").textContent = data[language].questions_content;
+  document.getElementById("questions_contact").textContent = data[language].questions_contact;
 }
 
 document.getElementById("switchToEnglish").addEventListener("click", () => updateContent("en"));
 document.getElementById("switchToKorean").addEventListener("click", () => updateContent("kr"));
+document.getElementById("switchToChinese").addEventListener("click", () => updateContent("cn"));
+document.getElementById("switchToJapanese").addEventListener("click", () => updateContent("jp"));

@@ -19,13 +19,13 @@
       <div class="navigationbox">
         <div class="nav">
           <a href="index.html"><img src="Logo/High Resolution Logo Files/Original on Transparent.png" class="nav_logo" /></a>
-          <a href="whystartline.html">Why Startline</a>
-          <a href="price.html">Price</a>
+          <a id="nav1" href="whystartline.html">Why Startline</a>
+          <a id="nav2" href="price.html">Price</a>
           <article class="dropdown">
-            <span>Resources</span>
+            <span id="nav3">Resources</span>
             <div class="dropdown-content">
-              <a href="support.html">Support</a><br />
-              <a href="contactus.html">Contact</a>
+              <a id="nav4" href="support.html">Support</a><br />
+              <a id="nav5" href="contactus.html">Contact</a>
             </div>
           </article>
         </div>
@@ -33,14 +33,14 @@
           <article class="dropdown_language">
             <img src="./Photos/language.png" class="nav_language" />
             <div class="dropdown-content_language">
-              <a href="index.html">English</a><br />
-              <a href="">Chinese</a><br />
-              <a href="">한국어</a><br />
-              <a href="">Japanese</a>
+              <button id="switchToEnglish">English</button><br />
+              <button id="switchToChinese">Chinese</button><br />
+              <button id="switchToKorean">한국어</button><br />
+              <button id="switchToJapanese">Japanese</button>
             </div>
           </article>
-          <a href="loginStartup.html" class="nav_login">Login</a>
-          <a href="join.html" class="nav_join">Join</a>
+          <a id="nav6" href="loginStartup.html" class="nav_login">Login</a>
+          <a id="nav7" href="join.html" class="nav_join">Join</a>
         </div>
       </div>
     </div>
@@ -50,32 +50,42 @@
       <br />
       <br />
       <article class="join_title_btn">
-        <p class="join_btn1"><a href="loginStartup.html">STARTUP</a></p>
-        <p class="join_btn2"><a href="loginCorporate.html">CORPORATE</a></p>
+        <p class="join_btn1"><a id="login_startup" href="loginStartup.html">STARTUP</a></p>
+        <p class="join_btn2"><a id="login_corporate" href="loginCorporate.html">CORPORATE</a></p>
       </article>
       <article class="join_main">
-        <p class="join_main1">Welcome Back</p>
-        <p class="join_main2">To championing your solutions</p>
+        <p id="login_welcome_back" class="join_main1">Welcome Back</p>
+        <p id="login_startup_slogan" class="join_main2">To championing your solutions</p>
         <br />
 
         <div class="container">
           <form action="./Platform/GetStarted.html">
-            <label for="uname" class="login_label">Work Email</label> <br />
+            <label for="uname" class="login_label" id="login_work_email">Work Email</label> <br />
             <input type="email" placeholder="name@company.com" name="uname" class="longin_label_content" required />
             <br />
-            <label for="psw" class="login_label">Password</label> <br />
+            <label for="psw" class="login_label" id="login_password">Password</label> <br />
             <div class="password-input">
-              <input type="password" id="pwordInput" placeholder="At least 8 characters" name="psw" class="longin_label_content" required />
+              <input
+                type="password"
+                id="pwordInput"
+                placeholder="At least 12 characters"
+                name="psw"
+                class="longin_label_content"
+                required
+              />
               <img src="./Photos/password.png" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" class="nav_language" />
             </div>
             <br />
-            <label> <input type="checkbox" checked="checked" name="remember" class="checkbox" /> Remember me </label>
-            <span class="psw"><a href="join.html">Forgot password?</a></span>
-            <button type="submit" class="login_btn">Sign In</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" class="checkbox" />
+              <span id="login_remember">Remember me</span></label
+            >
+            <span class="psw"><a id="login_forgot_pwd" href="join.html">Forgot password?</a></span>
+            <button type="submit" class="login_btn" id="login_sign_in">Sign In</button>
           </form>
         </div>
         <p class="join_main3">
-          Don't have an account?<span class="signup"><a href="join.html"> Sign up</a></span>
+          <span class="signup"><a id="login_sign_up" href="join.html">Don't have an account? Sign up</a></span>
         </p>
       </article>
     </div>
@@ -122,7 +132,7 @@
     </div>
   </body>
   <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-  <script src="smoothScroll.js"></script>
   <script src="lightbox-plus-jquery.js"></script>
   <script src="features.js"></script>
+  <script type="module" src="language_change_login_startup.js"></script>
 </html>
