@@ -337,35 +337,3 @@ function verifyContent(type) {
     GeneralUser.style.display = "block";
   }
 }
-
-//account Setting
-// function toggleSetting(setting) {
-//   var targetElement = document.querySelector(".support_navbar_subtitle_" + setting);
-
-//   if (targetElement) {
-//     targetElement.style.color = targetElement.style.color === "blue" ? "" : "blue"; // Toggle text color to blue
-//   }
-// }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   function handleClick(setting) {
-//     showContent(setting); // Call showContent with the setting
-//     toggleSetting(setting); // Call toggleSetting with the setting
-//   }
-
-//   document.getElementById("account").addEventListener("click", function () {
-//     handleClick("account");
-//   });
-
-//   document.getElementById("team").addEventListener("click", function () {
-//     handleClick("team");
-//   });
-
-//   document.getElementById("bookmark").addEventListener("click", function () {
-//     handleClick("bookmark");
-//   });
-
-//   document.getElementById("plan").addEventListener("click", function () {
-//     handleClick("plan");
-//   });
-// });
